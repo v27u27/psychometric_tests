@@ -1,0 +1,247 @@
+<div class="row">
+<div class="col s12">
+Q1. It is easier to refrain than to retreat from a quarrel.
+<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques1">
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col s12">Q2. If you cannot make a person think as you do, make him or her do as you think<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques2">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q3. Softs words wins hard hearts<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques3">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q4. You scratch my back. I’ll scratch yours<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques4">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q5. Come now and let us reason together<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques5">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q6. When two quarrel, the person who keeps silent first is the most praiseworthy<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques6">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q7. Might overcomes right<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques7">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q8. Smooth words make smooth ways<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques8">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q9. Better half a loaf than no bread at all<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques9">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q10. Truth lies in knowledge, not in majority<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques10">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q11. He who fights and runs away lives to fight another day<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="que11">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q12. He has conquered well who has made his enemies flee<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques12">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q13. Kill your enemies with kindness<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques13">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q14. A fair exchange brings no quarrel<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques14">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q15. No person has the final answer but every person has a piece to contribute<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques15">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q16. Stay away from people who disagree with you<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques16">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q17. Fields are won by those who believe in winning<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques17">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q18. Kind words are worth much and cost little<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques18">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q19. Tit for Tat is fair play<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques19">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q20. Only the person who is willing to give up his on her monopoly on truth can earn profit from the truths that others hold<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques20">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q21. Avoid quarrelsome people as they will only make your life miserable<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques21">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q22. A person who will not flee will make other flee<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques22">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q23. Soft words ensure harmony<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques23">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q24. One gift for another make good friends<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques24">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q25. Bring your conflicts in open and face them directly; only then will the best solution be discovered<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques25">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q26. The best way of handling conflicts is to avoid them<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques26">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q27. Put your foot down where you mean to stand<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques27">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q28. Gentleness will triumph over anger<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques28">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q29. Getting part of what you want is better than not getting anything at all<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques29">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q30. Frankness, honesty and trust will have mountains<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques30">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q31. There is nothing so important you have to fight for it<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques31">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q32. There are two kinds of people in the world, the winners and the losers<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques32">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q33. When one hits you with a stone , hit him or her with a piece of cotton<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques33">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q34. When both people give in halfway, a fair settlement is achieved<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques34">
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">Q35. By digging and digging, the truth is discovered<div class="input-field inline">
+<input type="number" step="1" min="1" max="5" required name="ques35">
+</div>
+</div>
+</div>

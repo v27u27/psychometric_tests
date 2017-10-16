@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Map your Emotions</title>
+<style type="text/css">
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  /* Tablet Landscape */
+  @media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+  }
+
+  /* Tabled Portrait */
+  @media screen and (max-width: 768px) {
+      #primary { width:100%; }
+      #secondary { width:100%; margin:0; border:none; }
+  }
+  @media (min-device-width:600px) {
+      img[data-src-600px] {
+          content: attr(data-src-600px, url);
+      }
+  }
+
+  @media (min-device-width:800px) {
+      img[data-src-800px] {
+          content: attr(data-src-800px, url);
+      }
+  }
+  html { font-size:100%; }
+  @media (min-width: 640px) { body {font-size:1rem;} } 
+  @media (min-width:960px) { body {font-size:1.2rem;} } 
+  @media (min-width:1100px) { body {font-size:1.5rem;} }
+  @media (min-width:1300px) { body {font-size:1.1rem;} } 
+</style>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+</head>
+
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+<div class="container">
+  <h3 align="center">Map your Emotions</h3>
+
+  <p style="text-align:justify" text-size="1rem">Indicate how frequently you do each of the following by putting a tick mark in the proper column opposite to each item. Please feel free to respond as this purely for your consumption. If you will not honest to these items you will get a negative picture of yours. </p>  
+
+  <form action="/cal" method="POST">
+    <br><br>
+
+    Q1. I give /ask people reasons why work is not done or why work is to be done.<br>
+    <input type="radio" name="ques1" value="a" required id="q1a" class="with-gap"><label class="radioLabel" for="q1a"> Almost Never</label> &nbsp;
+    <input type="radio" name="ques1" value="b" required id="q1b" class="with-gap"><label class="radioLabel" for="q1b"> Rarely</label> &nbsp;
+    <input type="radio" name="ques1" value="c" required id="q1c" class="with-gap"><label class="radioLabel" for="q1c"> Sometimes</label> &nbsp;
+    <input type="radio" name="ques1" value="d" required id="q1d" class="with-gap"><label class="radioLabel" for="q1d"> Frequently</label> &nbsp;
+    <input type="radio" name="ques1" value="e" required id="q1e" class="with-gap"><label class="radioLabel" for="q1e"> Very Frequently</label> &nbsp;<br><br><hr>
+
+    Q2. I feel bad about something (about what someone did or said to me, or about something I did or said).<br>
+    <input type="radio" name="ques2" value="a" required id="q2a" class="with-gap"><label class="radioLabel" for="q2a"> Almost Never</label> &nbsp;
+    <input type="radio" name="ques2" value="b" required id="q2b" class="with-gap"><label class="radioLabel" for="q2b"> Rarely</label> &nbsp;
+    <input type="radio" name="ques2" value="c" required id="q2c" class="with-gap"><label class="radioLabel" for="q2c"> Sometimes</label> &nbsp;
+    <input type="radio" name="ques2" value="d" required id="q2d" class="with-gap"><label class="radioLabel" for="q2d"> Frequently</label> &nbsp;
+    <input type="radio" name="ques2" value="e" required id="q2e" class="with-gap"><label class="radioLabel" for="q2e"> Very Frequently</label> &nbsp;<br>
+
+    Q3. I feel bad about something (about what someone did or said to me, or about something I did or said).<br>
+    <input type="radio" name="ques3" value="a" required id="q3a" class="with-gap"><label class="radioLabel" for="q3a"> Almost Never</label> &nbsp;
+    <input type="radio" name="ques3" value="b" required id="q3b" class="with-gap"><label class="radioLabel" for="q3b"> Rarely</label> &nbsp;
+    <input type="radio" name="ques3" value="c" required id="q3c" class="with-gap"><label class="radioLabel" for="q3c"> Sometimes</label> &nbsp;
+    <input type="radio" name="ques3" value="d" required id="q3d" class="with-gap"><label class="radioLabel" for="q3d"> Frequently</label> &nbsp;
+    <input type="radio" name="ques3" value="e" required id="q3e" class="with-gap"><label class="radioLabel" for="q3e"> Very Frequently</label> &nbsp;<br>
+
+    <button class="btn waves-effect waves-light" type="submit" name="submit">Submit</button>
+    
+  </form>
+</div>
+  <br><br><br><br><br>
+  <style type="text/css">
+    [type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
+    font-size: 1.08rem !important;
+}
+
+.radioLabel{
+  color: #31849b !important;
+}
+
+  </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</body>
+</html>
