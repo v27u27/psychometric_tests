@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>MBTI Test</title>
+<style type="text/css">
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  /* Tablet Landscape */
+  @media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+  }
+
+  /* Tabled Portrait */
+  @media screen and (max-width: 768px) {
+      #primary { width:100%; }
+      #secondary { width:100%; margin:0; border:none; }
+  }
+  @media (min-device-width:600px) {
+      img[data-src-600px] {
+          content: attr(data-src-600px, url);
+      }
+  }
+
+  @media (min-device-width:800px) {
+      img[data-src-800px] {
+          content: attr(data-src-800px, url);
+      }
+  }
+  html { font-size:100%; }
+  @media (min-width: 640px) { body {font-size:1rem;} } 
+  @media (min-width:960px) { body {font-size:1.2rem;} } 
+  @media (min-width:1100px) { body {font-size:1.5rem;} }
+  @media (min-width:1300px) { body {font-size:1.1rem;} } 
+</style>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+</head>
+
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+<div class="container">
+  <h3 align="center">MBTI Test</h3>
+
+  <p style="text-align:justify" text-size="1rem">This inventory is designed to allow you to preferred type or natural preferences in dealing with both your inner and outer worlds when you are at work. While the Mysers-Briggs Type Indicator (a registered trademark of Consulting Psychologist Press, Inc.) is a validated instrument that provides your overall psychological type across all of your life’s activities; the exercise, which you will do below, is oriented specifically towards your working life. It is most important that you answer the questions according to the way you really behave in the work situations described. Avoid thinking about the way you wish you had behaved, or think you ought to act, or think your boss would like you to act. Think always, “This is the way I actually behave-this is how I think, or act, or decide, or choose in this situation.” Answer the questions as honestly and as objectively as possible. The closer you come to the truth about how you actually behave, the more useful the information will be to you.</p>  
+
+  <blockquote>
+  For every question mentioned below select the option that most accurately describes how you usually act, think or feel 
+  </blockquote>
+
+  <form action="/cal" method="POST">
+    <br><br>
+
+
+    Q1. MY BEST IDEAS AT WORK COME FROM<br>
+    <input type="radio" name="ques1" value="a" required id="q1a" class="with-gap"><label class="radioLabel" for="q1a"> an interchange of ideas and sharing with others</label><br>
+    <input type="radio" name="ques1" value="b" required id="q1b" class="with-gap"><label class="radioLabel" for="q1b"> quite thought on my own</label><br><br><br>
+
+    Q2. WHEN I RUN A MEETING, I AM USUALLY<br>
+    <input type="radio" name="ques2" value="a" required id="q2a" class="with-gap"><label class="radioLabel" for="q2a"> disciplined about following my prepared agenda</label><br>
+    <input type="radio" name="ques2" value="b" required id="q2b" class="with-gap"><label class="radioLabel" for="q2b"> flexible and open to whatever comes up</label><br><br><br>
+
+    Q3. WHEN HANDLING A SUBORDINATE’S DEVELOPMENT, I AMMOST LIKELY TO<br>
+    <input type="radio" name="ques3" value="a" required id="q3a" class="with-gap"><label class="radioLabel" for="q3a"> discuss a problem I have with his or her behaviour</label><br>
+    <input type="radio" name="ques3" value="b" required id="q3b" class="with-gap"><label class="radioLabel" for="q3b"> dislike telling him or her unpleasant things</label><br><br><br>
+
+    Q4. I PREFER THE PLACE WHERE I WORK TO BE<br>
+    <input type="radio" name="ques4" value="a" required id="q4a" class="with-gap"><label class="radioLabel" for="q4a"> structured with clear rules and regulations</label><br>
+    <input type="radio" name="ques4" value="b" required id="q4b" class="with-gap"><label class="radioLabel" for="q4b"> more open-ended and liassez-faire</label><br><br><br>
+
+    Q5. I WOULD RATHER HAVE A SUPERIOR WITH WHOM I HAVE<br>
+    <input type="radio" name="ques5" value="a" required id="q5a" class="with-gap"><label class="radioLabel" for="q5a"> a  lot of day-by-day interaction</label><br>
+    <input type="radio" name="ques5" value="b" required id="q5b" class="with-gap"><label class="radioLabel" for="q5b"> only frequent interaction</label><br><br><br>
+
+    Q6. I PREFER MEETING WHERE MOST TIME IS SPENT ON<br>
+    <input type="radio" name="ques6" value="a" required id="q6a" class="with-gap"><label class="radioLabel" for="q6a"> the application of the ideas discussed</label><br>
+    <input type="radio" name="ques6" value="b" required id="q6b" class="with-gap"><label class="radioLabel" for="q6b"> the ideas themselves</label><br><br><br>
+
+    Q7. I PREFER A WORK ENVIRONMENT WHERE<br>
+    <input type="radio" name="ques7" value="a" required id="q7a" class="with-gap"><label class="radioLabel" for="q7a"> frequent differences of opinion breed interesting discussion and ideas</label><br>
+    <input type="radio" name="ques7" value="b" required id="q7b" class="with-gap"><label class="radioLabel" for="q7b"> conflict is reduced by avoiding discussions about differences of opinion</label><br><br><br>
+
+    Q8. I PREFER PROJECTS AT WORK<br>
+    <input type="radio" name="ques8" value="a" required id="q8a" class="with-gap"><label class="radioLabel" for="q8a"> to be well-defined and planned out</label><br>
+    <input type="radio" name="ques8" value="b" required id="q8b" class="with-gap"><label class="radioLabel" for="q8b"> to allow for flexible interpretation</label><br><br><br>
+
+    Q9. I PREFER TO SPEND MY LUNCH HOUR<br>
+    <input type="radio" name="ques9" value="a" required id="q9a" class="with-gap"><label class="radioLabel" for="q9a"> eating with a group</label><br>
+    <input type="radio" name="ques9" value="b" required id="q9b" class="with-gap"><label class="radioLabel" for="q9b"> eating alone or with one close colleague</label><br><br><br>
+
+    Q10. IF MY BOSS GIVES ME A DIFFICULT TASK, I USUALLY<br>
+    <input type="radio" name="ques10" value="a" required id="q10a" class="with-gap"><label class="radioLabel" for="q10a"> collect as much information as possible before starting</label><br>
+    <input type="radio" name="ques10" value="b" required id="q10b" class="with-gap"><label class="radioLabel" for="q10b"> dive in and rely on my ability to work things out</label><br><br><br>
+
+    Q11. IN A PERFORMANCE APPRAISAL, I PREFER MY BOSS TO WRITE THAT I AM<br>
+    <input type="radio" name="ques11" value="a" required id="q11a" class="with-gap"><label class="radioLabel" for="q11a"> intelligent and reasonable</label><br>
+    <input type="radio" name="ques11" value="b" required id="q11b" class="with-gap"><label class="radioLabel" for="q11b"> warm and personable</label><br><br><br>
+
+    Q12. I PREFER TO<br>
+    <input type="radio" name="ques12" value="a" required id="q12a" class="with-gap"><label class="radioLabel" for="q12a"> plan my workday carefully in advance</label><br>
+    <input type="radio" name="ques12" value="b" required id="q12b" class="with-gap"><label class="radioLabel" for="q12b"> let the day progress and see how things turn out</label><br><br><br>
+
+    Q13. I MORE OFTEN PREFER TO KEEP MY OFFICE DOOR<br>
+    <input type="radio" name="ques13" value="a" required id="q13a" class="with-gap"><label class="radioLabel" for="q13a"> open</label><br>
+    <input type="radio" name="ques13" value="b" required id="q13b" class="with-gap"><label class="radioLabel" for="q13b"> closed</label><br><br><br>
+
+    Q14. WHEN A NEW IDEA FLASHES INTO MY MIND,I USUALLY<br>
+    <input type="radio" name="ques14" value="a" required id="q14a" class="with-gap"><label class="radioLabel" for="q14a"> like to test it carefully before I get excited</label><br>
+    <input type="radio" name="ques14" value="b" required id="q14b" class="with-gap"><label class="radioLabel" for="q14b"> get excited and want to follow through quickly</label><br><br><br>
+
+    Q15. IN A TEAM MEETING, I PREFER TO EMPHASIZE<br>
+    <input type="radio" name="ques15" value="a" required id="q15a" class="with-gap"><label class="radioLabel" for="q15a"> an analytical discussion of the facts</label><br>
+    <input type="radio" name="ques15" value="b" required id="q15b" class="with-gap"><label class="radioLabel" for="q15b"> a discussion of the values involved</label><br><br><br>
+
+    Q16. I PREFER A JOB WHERE REWARDS ARE<br>
+    <input type="radio" name="ques16" value="a" required id="q16a" class="with-gap"><label class="radioLabel" for="q16a"> seen clearly in regular period</label><br>
+    <input type="radio" name="ques16" value="b" required id="q16b" class="with-gap"><label class="radioLabel" for="q16b"> stretched out over long periods of time</label><br><br><br>
+
+    Q17. I DRESS FOR WORK<br>
+    <input type="radio" name="ques17" value="a" required id="q17a" class="with-gap"><label class="radioLabel" for="q17a"> so that other people notice and admire my clothing</label><br>
+    <input type="radio" name="ques17" value="b" required id="q17b" class="with-gap"><label class="radioLabel" for="q17b"> in a way that blends in with the norm</label><br><br><br>
+
+    Q18. WHEN I SOLVE PROBLEMS, I AM MORE LIKELY TO<br>
+    <input type="radio" name="ques18" value="a" required id="q18a" class="with-gap"><label class="radioLabel" for="q18a"> give most weights to the facts in front of me</label><br>
+    <input type="radio" name="ques18" value="b" required id="q18b" class="with-gap"><label class="radioLabel" for="q18b"> explore the full range of possibilities</label><br><br><br>
+
+    Q19. IF I HAVE TO CONFRONT COLLEAGUES OR SUBORDINATES, I AM USUALLY<br>
+    <input type="radio" name="ques19" value="a" required id="q19a" class="with-gap"><label class="radioLabel" for="q19a"> interested in making sure I give them the facts accurately</label><br>
+    <input type="radio" name="ques19" value="b" required id="q19b" class="with-gap"><label class="radioLabel" for="q19b"> more interested in making sure I don’t hurt their feelings</label><br><br><br>
+
+    Q20. I WOULD RATHER HAVE A BOSS WHO<br>
+    <input type="radio" name="ques20" value="a" required id="q20a" class="with-gap"><label class="radioLabel" for="q20a"> provides a lot of structure and organization</label><br>
+    <input type="radio" name="ques20" value="b" required id="q20b" class="with-gap"><label class="radioLabel" for="q20b"> leaves me to do things however they work best for me</label><br><br><br>
+
+    Q21. I PREFER MOST OF MY JOBS AT WORK TO BE<br>
+    <input type="radio" name="ques21" value="a" required id="q21a" class="with-gap"><label class="radioLabel" for="q21a"> a continuing series of short takes</label><br>
+    <input type="radio" name="ques21" value="b" required id="q21b" class="with-gap"><label class="radioLabel" for="q21b"> long projects on which I can concentrate my efforts</label><br><br><br>
+
+    Q22. WHEN I WRITE A REPORT, I USUALLY THINK FIRST OF<br>
+    <input type="radio" name="ques22" value="a" required id="q22a" class="with-gap"><label class="radioLabel" for="q22a"> the details</label><br>
+    <input type="radio" name="ques22" value="b" required id="q22b" class="with-gap"><label class="radioLabel" for="q22b"> the big picture</label><br><br><br>
+
+    Q23. WHEN I HAVE A DECISION TO MAKE AT WORK, I USUALLY<br>
+    <input type="radio" name="ques23" value="a" required id="q23a" class="with-gap"><label class="radioLabel" for="q23a"> reason it through regardless of my feelings</label><br>
+    <input type="radio" name="ques23" value="b" required id="q23b" class="with-gap"><label class="radioLabel" for="q23b"> consider my feelings to be very important</label><br><br><br>
+
+    Q24. I PREFER MY OWN OFFICE TO BE ONE IN WHICH<br>
+    <input type="radio" name="ques24" value="a" required id="q24a" class="with-gap"><label class="radioLabel" for="q24a"> things are orderly, organized and systematic</label><br>
+    <input type="radio" name="ques24" value="b" required id="q24b" class="with-gap"><label class="radioLabel" for="q24b"> there is a creative array of projects, papers and books</label><br><br><br>
+
+    Q25. WHEN I HAVE LUNCH WITH COLLEAGUES, I WOULD RATHER<br>
+    <input type="radio" name="ques25" value="a" required id="q25a" class="with-gap"><label class="radioLabel" for="q25a"> talk about people</label><br>
+    <input type="radio" name="ques25" value="b" required id="q25b" class="with-gap"><label class="radioLabel" for="q25b"> talk about ideas</label><br><br><br>
+
+    Q26. I WOULD RATHER HAVE MY BOSS TRUST ME WITH<br>
+    <input type="radio" name="ques26" value="a" required id="q26a" class="with-gap"><label class="radioLabel" for="q26a"> practical problems to solve</label><br>
+    <input type="radio" name="ques26" value="b" required id="q26b" class="with-gap"><label class="radioLabel" for="q26b"> policy problems to solve</label><br><br><br>
+
+    Q27. WHEN FACED WITH A DECISION AT WORK, I USUALLY PREFER TO<br>
+    <input type="radio" name="ques27" value="a" required id="q27a" class="with-gap"><label class="radioLabel" for="q27a"> think things though</label><br>
+    <input type="radio" name="ques27" value="b" required id="q27b" class="with-gap"><label class="radioLabel" for="q27b"> trust gut feelings</label><br><br><br>
+
+    Q28. I PREFER THE WORK I DO EVERYDAY TO<br>
+    <input type="radio" name="ques28" value="a" required id="q28a" class="with-gap"><label class="radioLabel" for="q28a"> be continuous and relatively predictable</label><br>
+    <input type="radio" name="ques28" value="b" required id="q28b" class="with-gap"><label class="radioLabel" for="q28b"> have frequent changes in activities and schedules</label><br><br><br>
+
+    Q29. WHEN I HAVE TO ORGANIZE AND RUN A MEETING, I MORE OFTEN<br>
+    <input type="radio" name="ques29" value="a" required id="q29a" class="with-gap"><label class="radioLabel" for="q29a"> feel satisfied that I have the opportunity to lead</label><br>
+    <input type="radio" name="ques29" value="b" required id="q29b" class="with-gap"><label class="radioLabel" for="q29b"> prefer that someone else had the responsibility</label><br><br><br>
+
+    Q30. IF I WERE ASKED TO PREPARE A STRATEGIC PLAN, I WOULD BE MORE LIKELY TO<br>
+    <input type="radio" name="ques30" value="a" required id="q30a" class="with-gap"><label class="radioLabel" for="q30a"> emphasize what is practical now</label><br>
+    <input type="radio" name="ques30" value="b" required id="q30b" class="with-gap"><label class="radioLabel" for="q30b"> orient plan toward future possibilities</label><br><br><br>
+
+    Q31. WHEN FACED WITH A DECISION AT WORK, I USUALLY<br>
+    <input type="radio" name="ques31" value="a" required id="q31a" class="with-gap"><label class="radioLabel" for="q31a"> focus on the facts and figures</label><br>
+    <input type="radio" name="ques31" value="b" required id="q31b" class="with-gap"><label class="radioLabel" for="q31b"> give careful attention to people’s feelings</label><br><br><br>
+
+    Q32. WHEN MY BOSS GIVES ME A NEW PROJECT, I USUALLY PREFER<br>
+    <input type="radio" name="ques32" value="a" required id="q32a" class="with-gap"><label class="radioLabel" for="q32a"> a clear statement of what is expected</label><br>
+    <input type="radio" name="ques32" value="b" required id="q32b" class="with-gap"><label class="radioLabel" for="q32b"> to be left to work it out the way I want</label><br><br><br>
+
+    Q33. I PREFER TO HAVE<br>
+    <input type="radio" name="ques33" value="a" required id="q33a" class="with-gap"><label class="radioLabel" for="q33a"> a large group of colleagues at work</label><br>
+    <input type="radio" name="ques33" value="b" required id="q33b" class="with-gap"><label class="radioLabel" for="q33b"> a few colleagues that I know well</label><br><br><br>
+
+    Q34. IN ONE-TO-ONE MEETING, I AM MORE LIKELY TO<br>
+    <input type="radio" name="ques34" value="a" required id="q34a" class="with-gap"><label class="radioLabel" for="q34a"> listen quietly and absorb details</label><br>
+    <input type="radio" name="ques34" value="b" required id="q34b" class="with-gap"><label class="radioLabel" for="q34b"> anticipate the speaker’s words and interact</label><br><br><br>
+
+    Q35. IF SOMEONE ARGUES FOR A POLICY OR DECISION I MAKE, I USUALLY<br>
+    <input type="radio" name="ques35" value="a" required id="q35a" class="with-gap"><label class="radioLabel" for="q35a"> remain firm</label><br>
+    <input type="radio" name="ques35" value="b" required id="q35b" class="with-gap"><label class="radioLabel" for="q35b"> seek to avoid unpleasantness, anger and disharmony</label><br><br><br>
+
+    Q36. WHEN I HAVE A TOUGH CHOICE AT WORK, I USUALLY<br>
+    <input type="radio" name="ques36" value="a" required id="q36a" class="with-gap"><label class="radioLabel" for="q36a"> am satisfied that it is done</label><br>
+    <input type="radio" name="ques36" value="b" required id="q36b" class="with-gap"><label class="radioLabel" for="q36b"> wish that I was open to other alternatives</label><br><br><br>
+
+    Q37. WHEN I ATTEND A COMPANY OUTING, I USUALLY<br>
+    <input type="radio" name="ques37" value="a" required id="q37a" class="with-gap"><label class="radioLabel" for="q37a"> walk around and meet people I may not know well</label><br>
+    <input type="radio" name="ques37" value="b" required id="q37b" class="with-gap"><label class="radioLabel" for="q37b"> hang out with the colleagues, I know best</label><br><br><br>
+
+    Q38. I THINK MY COLLEAGUES SEE ME MORE<br>
+    <input type="radio" name="ques38" value="a" required id="q38a" class="with-gap"><label class="radioLabel" for="q38a"> as a here-and-now person</label><br>
+    <input type="radio" name="ques38" value="b" required id="q38b" class="with-gap"><label class="radioLabel" for="q38b"> as someone with an orientation towards the future</label><br><br><br>
+
+    Q39. WHEN I HAVE A LONG AND COMPLEX REPORT TO READ, I AM MORE LIKELY TO<br>
+    <input type="radio" name="ques39" value="a" required id="q39a" class="with-gap"><label class="radioLabel" for="q39a"> be patient and study the details</label><br>
+    <input type="radio" name="ques39" value="b" required id="q39b" class="with-gap"><label class="radioLabel" for="q39b"> try and get the general ideas and see how I feel about them</label><br><br><br>
+
+    Q40. I PREFER MY WORK ENVIRONMENT TO BE<br>
+    <input type="radio" name="ques40" value="a" required id="q40a" class="with-gap"><label class="radioLabel" for="q40a"> comfortable, predictable and stable</label><br>
+    <input type="radio" name="ques40" value="b" required id="q40b" class="with-gap"><label class="radioLabel" for="q40b"> flexible and changing</label><br><br><br>
+
+    Q41. MY COLLEAGUES AT WORK ARE MORE LIKELY TO DESCRIBE ME AS<br>
+    <input type="radio" name="ques41" value="a" required id="q41a" class="with-gap"><label class="radioLabel" for="q41a"> an energetic team player</label><br>
+    <input type="radio" name="ques41" value="b" required id="q41b" class="with-gap"><label class="radioLabel" for="q41b"> a quite and thoughtful employee</label><br><br><br>
+
+    Q42. WHEN I PREPARE A PRESENTATION, I PREFER TO EMPHASISE<br>
+    <input type="radio" name="ques42" value="a" required id="q42a" class="with-gap"><label class="radioLabel" for="q42a"> the use of real facts from my own experience</label><br>
+    <input type="radio" name="ques42" value="b" required id="q42b" class="with-gap"><label class="radioLabel" for="q42b"> the discussion of ideas and concepts</label><br><br><br>
+
+    Q43. I PREFER TO WORK WITH COLLEAGUES WHO<br>
+    <input type="radio" name="ques43" value="a" required id="q43a" class="with-gap"><label class="radioLabel" for="q43a"> rely heavily on logic</label><br>
+    <input type="radio" name="ques43" value="b" required id="q43b" class="with-gap"><label class="radioLabel" for="q43b"> look more often to their feelings</label><br><br><br>
+
+    Q44. IF SOMEONE IN MY TEAM IS LATE WITH A SCHEDULED TASK, I USUALLY<br>
+    <input type="radio" name="ques44" value="a" required id="q44a" class="with-gap"><label class="radioLabel" for="q44a"> get impatient and annoyed</label><br>
+    <input type="radio" name="ques44" value="b" required id="q44b" class="with-gap"><label class="radioLabel" for="q44b"> look for ways to stretch the deadlines</label><br><br><br>
+
+    Q45. WHEN I ATTEND A TRAINING SESSION, I AM MORE LIKELY TO<br>
+    <input type="radio" name="ques45" value="a" required id="q45a" class="with-gap"><label class="radioLabel" for="q45a"> participate openly and actively</label><br>
+    <input type="radio" name="ques45" value="b" required id="q45b" class="with-gap"><label class="radioLabel" for="q45b"> let other takes the active role</label><br><br><br>
+
+    Q46. WHEN COLLEAGUES AND SUBORDINATES PRESENT IDEAS TO ME, I AM USUALLY MORE INTERESTED IN<br>
+    <input type="radio" name="ques46" value="a" required id="q46a" class="with-gap"><label class="radioLabel" for="q46a"> immediately useful ideas</label><br>
+    <input type="radio" name="ques46" value="b" required id="q46b" class="with-gap"><label class="radioLabel" for="q46b"> ideas with innovative approaches</label><br><br><br>
+
+    Q47. IF I HAVE TO DEAL WITH A COLLEAGUE’S FEELINGS, I PREFER TO BE<br>
+    <input type="radio" name="ques47" value="a" required id="q47a" class="with-gap"><label class="radioLabel" for="q47a"> truthful even if I can’t be tactful</label><br>
+    <input type="radio" name="ques47" value="b" required id="q47b" class="with-gap"><label class="radioLabel" for="q47b"> tactful even if I can’t tell the truth</label><br><br><br>
+
+    Q48. I PREFER PROJECTS THAT<br>
+    <input type="radio" name="ques48" value="a" required id="q48a" class="with-gap"><label class="radioLabel" for="q48a"> have a clear ending date when I know they will be finished</label><br>
+    <input type="radio" name="ques48" value="b" required id="q48b" class="with-gap"><label class="radioLabel" for="q48b"> may remain open-ended to ensure that all bases are covered</label><br><br><br>
+
+    Q49. WHEN I HAVE A DECISION TO MAKE AT WORK, I MORE OFTEN<br>
+    <input type="radio" name="ques49" value="a" required id="q49a" class="with-gap"><label class="radioLabel" for="q49a"> talk it over with a number of people before I decide</label><br>
+    <input type="radio" name="ques49" value="b" required id="q49b" class="with-gap"><label class="radioLabel" for="q49b"> spend most of my time working it out in my own head</label><br><br><br>
+
+    Q50. I PREFER A JOB WHERE I CAN<br>
+    <input type="radio" name="ques50" value="a" required id="q50a" class="with-gap"><label class="radioLabel" for="q50a"> use my experience to work at familiar tasks</label><br>
+    <input type="radio" name="ques50" value="b" required id="q50b" class="with-gap"><label class="radioLabel" for="q50b"> confront ideas and problems that are new to me</label><br><br><br>
+
+    Q51. WHEN I AM AT A MEETING AND A DIFFERENCE OF OPINION COMES UP, I USUALLY<br>
+    <input type="radio" name="ques51" value="a" required id="q51a" class="with-gap"><label class="radioLabel" for="q51a"> defend the side I think is most logical</label><br>
+    <input type="radio" name="ques51" value="b" required id="q51b" class="with-gap"><label class="radioLabel" for="q51b"> try to create a harmonious atmosphere and solution</label><br><br><br>
+
+    Q52. WHEN I GET A NEW PROJECT, I USUALLY PREFER TO<br>
+    <input type="radio" name="ques52" value="a" required id="q52a" class="with-gap"><label class="radioLabel" for="q52a"> get to it and complete it as quickly as possible</label><br>
+    <input type="radio" name="ques52" value="b" required id="q52b" class="with-gap"><label class="radioLabel" for="q52b"> move as slowly as allowable and explore various approaches</label><br><br><br>
+
+    Q53. I AM MORE INTERESTED IN<br>
+    <input type="radio" name="ques53" value="a" required id="q53a" class="with-gap"><label class="radioLabel" for="q53a"> the actual tasks I am doing day-by-day</label><br>
+    <input type="radio" name="ques53" value="b" required id="q53b" class="with-gap"><label class="radioLabel" for="q53b"> the thoughts I have about my work</label><br><br><br>
+
+    Q54. WHEN I ATTEND A TRAINING SESSION, I USUALLY PREFER<br>
+    <input type="radio" name="ques54" value="a" required id="q54a" class="with-gap"><label class="radioLabel" for="q54a"> experiential processes</label><br>
+    <input type="radio" name="ques54" value="b" required id="q54b" class="with-gap"><label class="radioLabel" for="q54b"> information and abstraction</label><br><br><br>
+
+    Q55. WHEN I HAVE A MEETING WITH A COLLEAGUE, I USUALLY<br>
+    <input type="radio" name="ques55" value="a" required id="q55a" class="with-gap"><label class="radioLabel" for="q55a"> get through it quickly in business like manner</label><br>
+    <input type="radio" name="ques55" value="b" required id="q55b" class="with-gap"><label class="radioLabel" for="q55b"> linger over the sociable interaction</label><br><br><br>
+
+    Q56. I WOULD RATHER BE IN A JOB WITH<br>
+    <input type="radio" name="ques56" value="a" required id="q56a" class="with-gap"><label class="radioLabel" for="q56a"> activities requiring me to reach a conclusion</label><br>
+    <input type="radio" name="ques56" value="b" required id="q56b" class="with-gap"><label class="radioLabel" for="q56b"> activities that allow me to stay open to my experience</label><br><br><br>
+
+    Q57. WHEN I ASK A COLLEAGUE FOR ADVICE OR HELP, I AM USUALLY<br>
+    <input type="radio" name="ques57" value="a" required id="q57a" class="with-gap"><label class="radioLabel" for="q57a"> comfortable</label><br>
+    <input type="radio" name="ques57" value="b" required id="q57b" class="with-gap"><label class="radioLabel" for="q57b"> somewhat ill at else</label><br><br><br>
+
+    Q58. IN A MEETING OR WHEN READING A REPORT, I AM MORE LIKELY TO<br>
+    <input type="radio" name="ques58" value="a" required id="q58a" class="with-gap"><label class="radioLabel" for="q58a"> remember the facts presented</label><br>
+    <input type="radio" name="ques58" value="b" required id="q58b" class="with-gap"><label class="radioLabel" for="q58b"> remember mostly the concepts presented</label><br><br><br>
+
+    Q59. WHEN COLLEAGUES ASK MY ADVICE ABOUT A WORK MATTER, I MORE OFTEN<br>
+    <input type="radio" name="ques59" value="a" required id="q59a" class="with-gap"><label class="radioLabel" for="q59a"> guide them toward a decision based purely on logic</label><br>
+    <input type="radio" name="ques59" value="b" required id="q59b" class="with-gap"><label class="radioLabel" for="q59b"> help them explore the values and policies in the situation</label><br><br><br>
+
+    Q60. WHEN I AM IN A MEETING, I AM USUALLY MORE INTERESTED IN<br>
+    <input type="radio" name="ques60" value="a" required id="q60a" class="with-gap"><label class="radioLabel" for="q60a"> getting the job done as quickly as possible</label><br>
+    <input type="radio" name="ques60" value="b" required id="q60b" class="with-gap"><label class="radioLabel" for="q60b"> spending time making sure everyone gets heard</label><br><br><br>
+
+    Q61. WHEN I AM INTERRUPTED IN THE MIDDLE OF A TOUGH JOB, I USUALLY<br>
+    <input type="radio" name="ques61" value="a" required id="q61a" class="with-gap"><label class="radioLabel" for="q61a"> welcome the opportunity to talk to someone</label><br>
+    <input type="radio" name="ques61" value="b" required id="q61b" class="with-gap"><label class="radioLabel" for="q61b"> prefer to be left alone with my thoughts</label><br><br><br>
+
+    Q62. WHEN I READ A REPORT, I USUALLY GO FIRST TO<br>
+    <input type="radio" name="ques62" value="a" required id="q62a" class="with-gap"><label class="radioLabel" for="q62a"> the body of detailed information</label><br>
+    <input type="radio" name="ques62" value="b" required id="q62b" class="with-gap"><label class="radioLabel" for="q62b"> the summary of executive overview</label><br><br><br>
+
+    Q63. WHEN I AM PUTTING FORWARD A NEW IDEA AT WORK, I MORE OFTEN<br>
+    <input type="radio" name="ques63" value="a" required id="q63a" class="with-gap"><label class="radioLabel" for="q63a"> remain firm about the correctness of it</label><br>
+    <input type="radio" name="ques63" value="b" required id="q63b" class="with-gap"><label class="radioLabel" for="q63b"> try to persuade others by appealing to their sense of value</label><br><br><br>
+
+    Q64. IF MY BOSS INSISTS THAT I SCHEDULE MY WORKDAY, I FEEL<br>
+    <input type="radio" name="ques64" value="a" required id="q64a" class="with-gap"><label class="radioLabel" for="q64a"> satisfied  that I am organized</label><br>
+    <input type="radio" name="ques64" value="b" required id="q64b" class="with-gap"><label class="radioLabel" for="q64b"> try to persuade others by appealing to their sense of value</label><br><br><br>
+
+    Q65. WHEN I AM AT A MEETING AND SOME ONE TELLS A JOKE, I USUALLY<br>
+    <input type="radio" name="ques65" value="a" required id="q65a" class="with-gap"><label class="radioLabel" for="q65a"> laugh and think of one to tell</label><br>
+    <input type="radio" name="ques65" value="b" required id="q65b" class="with-gap"><label class="radioLabel" for="q65b"> enjoy the joke quietly</label><br><br><br>
+
+    Q66. IN A PERFORMANCE APPRAISAL, IT WOULD BE MORE ACCURATE IF MY BOSS IS<br>
+    <input type="radio" name="ques66" value="a" required id="q66a" class="with-gap"><label class="radioLabel" for="q66a"> practical</label><br>
+    <input type="radio" name="ques66" value="b" required id="q66b" class="with-gap"><label class="radioLabel" for="q66b"> imaginative</label><br><br><br>
+
+    Q67. I AM USUALLY MORE INTRESTED IN HOW MY COLLEAGUES<br>
+    <input type="radio" name="ques67" value="a" required id="q67a" class="with-gap"><label class="radioLabel" for="q67a"> think about the problems</label><br>
+    <input type="radio" name="ques67" value="b" required id="q67b" class="with-gap"><label class="radioLabel" for="q67b"> feel about the problems</label><br><br><br>
+
+    Q68. WHEN A NEW AND UNUSUAL POLICY ANNOUNCEMENT IS ISSUED AT WORK, I AM USUALLY<br>
+    <input type="radio" name="ques68" value="a" required id="q68a" class="with-gap"><label class="radioLabel" for="q68a"> annoyed or otherwise upset at the changes</label><br>
+    <input type="radio" name="ques68" value="b" required id="q68b" class="with-gap"><label class="radioLabel" for="q68b"> interested in seeing how I will handle the new environment</label><br><br><br>
+
+    Q69. IN A MEETING I USUALLY<br>
+    <input type="radio" name="ques69" value="a" required id="q69a" class="with-gap"><label class="radioLabel" for="q69a"> speak out directly when I want to</label><br>
+    <input type="radio" name="ques69" value="b" required id="q69b" class="with-gap"><label class="radioLabel" for="q69b"> wait until I am asked directly before I speak</label><br><br><br>
+
+    Q70. WHEN I START A NEW  PROJECT, I USUALLY<br>
+    <input type="radio" name="ques70" value="a" required id="q70a" class="with-gap"><label class="radioLabel" for="q70a"> write a step-by-step plan early in the process</label><br>
+    <input type="radio" name="ques70" value="b" required id="q70b" class="with-gap"><label class="radioLabel" for="q70b"> wait and see how things develop before planning</label><br><br><br>
+
+    Q71. WHEN I HEAR A PRESENTATION FROM A COLLEGUE, I MAY MORE LIKELY TO BE<br>
+    <input type="radio" name="ques71" value="a" required id="q71a" class="with-gap"><label class="radioLabel" for="q71a"> openly and intellectually critical</label><br>
+    <input type="radio" name="ques71" value="b" required id="q71b" class="with-gap"><label class="radioLabel" for="q71b"> careful in voicing my opinions, especially when I disagree</label><br><br><br>
+
+    Q72. IF THERE COULDN’T BE BOTH, I WOULD RATHER HAVE COLLEAGUES WHO ARE<br>
+    <input type="radio" name="ques72" value="a" required id="q72a" class="with-gap"><label class="radioLabel" for="q72a"> well-organized</label><br>
+    <input type="radio" name="ques72" value="b" required id="q72b" class="with-gap"><label class="radioLabel" for="q72b"> spontaneous</label><br><br><br>
+
+    Q73. I WOULD PREFER TO WORK IN A COMPANY WHERE<br>
+    <input type="radio" name="ques73" value="a" required id="q73a" class="with-gap"><label class="radioLabel" for="q73a"> everyone works together in an open, active environment</label><br>
+    <input type="radio" name="ques73" value="b" required id="q73b" class="with-gap"><label class="radioLabel" for="q73b"> people work independently in their own spaces</label><br><br><br>
+
+    Q74. I MORE OFTEN SEEK OUT WORK THAT APPLIES<br>
+    <input type="radio" name="ques74" value="a" required id="q74a" class="with-gap"><label class="radioLabel" for="q74a"> my practical skills and nature</label><br>
+    <input type="radio" name="ques74" value="b" required id="q74b" class="with-gap"><label class="radioLabel" for="q74b"> my ability to create new ideas and things</label><br><br><br>
+
+    Q75. WHEN I HAVE TO MAKE A DECISION AT WORK, I AM MORE LIKELY TO<br>
+    <input type="radio" name="ques75" value="a" required id="q75a" class="with-gap"><label class="radioLabel" for="q75a"> analyze the situation logically without considering my values and feelings</label><br>
+    <input type="radio" name="ques75" value="b" required id="q75b" class="with-gap"><label class="radioLabel" for="q75b"> put a strong emphasis on applying my values and feelings to the solution</label><br><br><br>
+
+    Q76. WHEN I PRESENT MY VIEWS IN A MEETING, I AM USUALLY<br>
+    <input type="radio" name="ques76" value="a" required id="q76a" class="with-gap"><label class="radioLabel" for="q76a"> decisive</label><br>
+    <input type="radio" name="ques76" value="b" required id="q76b" class="with-gap"><label class="radioLabel" for="q76b"> open to having others suggest changes and other views</label><br><br><br>
+
+    Q77. WHEN I NEED TO PASS ON AN IDEA OR INFORMATION, I PREFER TO<br>
+    <input type="radio" name="ques77" value="a" required id="q77a" class="with-gap"><label class="radioLabel" for="q77a"> talk directly to people about it</label><br>
+    <input type="radio" name="ques77" value="b" required id="q77b" class="with-gap"><label class="radioLabel" for="q77b"> put in writing</label><br><br><br>
+
+    Q78. MY LEADERSHIP STYLE IS BEST DESCRIBED AS<br>
+    <input type="radio" name="ques78" value="a" required id="q78a" class="with-gap"><label class="radioLabel" for="q78a"> practical</label><br>
+    <input type="radio" name="ques78" value="b" required id="q78b" class="with-gap"><label class="radioLabel" for="q78b"> visionary</label><br><br><br>
+
+    Q79. IN A PERFORMANCE APPRAISAL MEETING, I AM USUALLY MORE LIKELY TO<br>
+    <input type="radio" name="ques79" value="a" required id="q79a" class="with-gap"><label class="radioLabel" for="q79a"> be frank and honest regardless of feelings</label><br>
+    <input type="radio" name="ques79" value="b" required id="q79b" class="with-gap"><label class="radioLabel" for="q79b"> try to smooth over any problems and avoid hurt feelings</label><br><br><br>
+
+    Q80. WHEN I AM DISCUSSING AN IMPORTANT ISSUE AT MEETING, I USUALLY<br>
+    <input type="radio" name="ques80" value="a" required id="q80a" class="with-gap"><label class="radioLabel" for="q80a"> try to reach a definite conclusion quickly</label><br>
+    <input type="radio" name="ques80" value="b" required id="q80b" class="with-gap"><label class="radioLabel" for="q80b"> keep the options open</label><br><br><br>
+
+    Q81. I ENJOY MORE<br>
+    <input type="radio" name="ques81" value="a" required id="q81a" class="with-gap"><label class="radioLabel" for="q81a"> a workday filled with variety and interaction with others</label><br>
+    <input type="radio" name="ques81" value="b" required id="q81b" class="with-gap"><label class="radioLabel" for="q81b"> working without interacting with others for long period of time</label><br><br><br>
+
+    Q82. I PREFER A WORK SITUATION THAT IS<br>
+    <input type="radio" name="ques82" value="a" required id="q82a" class="with-gap"><label class="radioLabel" for="q82a"> stable with little changes</label><br>
+    <input type="radio" name="ques82" value="b" required id="q82b" class="with-gap"><label class="radioLabel" for="q82b"> full of changes</label><br><br><br>
+
+    Q83. MY COLLEAGUES WOULD BE MORE LIKELY TO DESCRIBE MY BEHAVIOR AT WORK AS<br>
+    <input type="radio" name="ques83" value="a" required id="q83a" class="with-gap"><label class="radioLabel" for="q83a"> cool, calm and objective</label><br>
+    <input type="radio" name="ques83" value="b" required id="q83b" class="with-gap"><label class="radioLabel" for="q83b"> warm  and feeling</label><br><br><br>
+
+    Q84. AT WORK, I PREFER PROJECTS<br>
+    <input type="radio" name="ques84" value="a" required id="q84a" class="with-gap"><label class="radioLabel" for="q84a"> on which I work  quickly to make a short deadline</label><br>
+    <input type="radio" name="ques84" value="b" required id="q84b" class="with-gap"><label class="radioLabel" for="q84b"> that have longer and more flexible deadlines</label><br><br><br>
+
+    Q85. WHEN I AM IN A MEETING WITH COLLEAGUES AND A HIGHER-RANKING MANAGER OR EXECUTIVE COME IN, I USUALLY<br>
+    <input type="radio" name="ques85" value="a" required id="q85a" class="with-gap"><label class="radioLabel" for="q85a"> greet the person in a conformable and friendly way</label><br>
+    <input type="radio" name="ques85" value="b" required id="q85b" class="with-gap"><label class="radioLabel" for="q85b"> wait until I see how others react to him or her</label><br><br><br>
+
+    Q86. WHEN I THINK OF MY MOST IMPORTANT WORK ASSETS, THEY ARE<br>
+    <input type="radio" name="ques86" value="a" required id="q86a" class="with-gap"><label class="radioLabel" for="q86a"> more in the realm of the practical</label><br>
+    <input type="radio" name="ques86" value="b" required id="q86b" class="with-gap"><label class="radioLabel" for="q86b"> more inclined toward the realm of ideas</label><br><br><br>
+
+    Q87. IN A TRAINING SESSION ON COURSE, I PREFER A TRAINER WHO DEPENDS MORE ON<br>
+    <input type="radio" name="ques87" value="a" required id="q87a" class="with-gap"><label class="radioLabel" for="q87a"> precision and logic</label><br>
+    <input type="radio" name="ques87" value="b" required id="q87b" class="with-gap"><label class="radioLabel" for="q87b"> emotion and experience</label><br><br><br>
+
+    Q88. I USUALLY PUSH MY COLLEAGUES OR SUBORDINATES FOR<br>
+    <input type="radio" name="ques88" value="a" required id="q88a" class="with-gap"><label class="radioLabel" for="q88a"> quick decision making</label><br>
+    <input type="radio" name="ques88" value="b" required id="q88b" class="with-gap"><label class="radioLabel" for="q88b"> through review, even is at risk of delaying decisions</label><br><br><br>
+
+    Q89. IN A NEW GROUP SETTING, I WOULD PREFER<br>
+    <input type="radio" name="ques89" value="a" required id="q89a" class="with-gap"><label class="radioLabel" for="q89a"> joining in a group discussion</label><br>
+    <input type="radio" name="ques89" value="b" required id="q89b" class="with-gap"><label class="radioLabel" for="q89b"> talking individually with selected people</label><br><br><br>
+
+    Q90. I GET ALONG BETTER WITH<br>
+    <input type="radio" name="ques90" value="a" required id="q90a" class="with-gap"><label class="radioLabel" for="q90a"> realistic people</label><br>
+    <input type="radio" name="ques90" value="b" required id="q90b" class="with-gap"><label class="radioLabel" for="q90b"> imaginative people</label><br><br><br>
+
+    Q91. I AM VIEWED BY OTHERS AS<br>
+    <input type="radio" name="ques91" value="a" required id="q91a" class="with-gap"><label class="radioLabel" for="q91a"> tough - minded</label><br>
+    <input type="radio" name="ques91" value="b" required id="q91b" class="with-gap"><label class="radioLabel" for="q91b"> warm - hearted</label><br><br><br>
+
+    Q92. I PREFER PLANNING TO BE<br>
+    <input type="radio" name="ques92" value="a" required id="q92a" class="with-gap"><label class="radioLabel" for="q92a"> structured and laid out well in advance</label><br>
+    <input type="radio" name="ques92" value="b" required id="q92b" class="with-gap"><label class="radioLabel" for="q92b"> flexible and open to frequent adjustment</label><br><br><br>
+
+    Q93. I AM VIEWED MORE OFTEN BY OTHERS AS<br>
+    <input type="radio" name="ques93" value="a" required id="q93a" class="with-gap"><label class="radioLabel" for="q93a"> talkative and easy to know</label><br>
+    <input type="radio" name="ques93" value="b" required id="q93b" class="with-gap"><label class="radioLabel" for="q93b"> reserved, quiet and harder to know</label><br><br><br>
+
+    Q94. I THINK ABOUT BUSINESS STRATEGY IN TERMS OF<br>
+    <input type="radio" name="ques94" value="a" required id="q94a" class="with-gap"><label class="radioLabel" for="q94a"> a specific plan</label><br>
+    <input type="radio" name="ques94" value="b" required id="q94b" class="with-gap"><label class="radioLabel" for="q94b"> a broad vision</label><br><br><br>
+
+    Q95. WHILE COMMUNICATING WITH OTHERS IN THE ORGANIZATION, I PREFER<br>
+    <input type="radio" name="ques95" value="a" required id="q95a" class="with-gap"><label class="radioLabel" for="q95a"> telling it like it is</label><br>
+    <input type="radio" name="ques95" value="b" required id="q95b" class="with-gap"><label class="radioLabel" for="q95b"> telling it in a way that will not offend or hurt others</label><br><br><br>
+
+    Q96. I ENJOY BEING<br>
+    <input type="radio" name="ques96" value="a" required id="q96a" class="with-gap"><label class="radioLabel" for="q96a"> organized</label><br>
+    <input type="radio" name="ques96" value="b" required id="q96b" class="with-gap"><label class="radioLabel" for="q96b"> flexible</label><br><br><br>
+
+    Q97. I GET MORE EXCITED ABOUT<br>
+    <input type="radio" name="ques97" value="a" required id="q97a" class="with-gap"><label class="radioLabel" for="q97a"> people and things</label><br>
+    <input type="radio" name="ques97" value="b" required id="q97b" class="with-gap"><label class="radioLabel" for="q97b"> ideas and thoughts</label><br><br><br>
+
+    Q98. I TAKE PRIDE IN BEING<br>
+    <input type="radio" name="ques98" value="a" required id="q98a" class="with-gap"><label class="radioLabel" for="q98a"> conventional and orthodox</label><br>
+    <input type="radio" name="ques98" value="b" required id="q98b" class="with-gap"><label class="radioLabel" for="q98b"> original and unorthodox</label><br><br><br>
+
+    Q99. I LOOK OTHERS MISTAKES WITH<br>
+    <input type="radio" name="ques99" value="a" required id="q99a" class="with-gap"><label class="radioLabel" for="q99a"> tolerance</label><br>
+    <input type="radio" name="ques99" value="b" required id="q99b" class="with-gap"><label class="radioLabel" for="q99b"> forgiveness</label><br><br><br>
+
+    Q100. I LIKE TO THINK IN TERMS OF<br>
+    <input type="radio" name="ques100" value="a" required id="q100a" class="with-gap"><label class="radioLabel" for="q100a"> making things happen</label><br>
+    <input type="radio" name="ques100" value="b" required id="q100b" class="with-gap"><label class="radioLabel" for="q100b"> letting things happen</label><br><br><br>
+
+    Q101. I ENJOY<br>
+    <input type="radio" name="ques101" value="a" required id="q101a" class="with-gap"><label class="radioLabel" for="q101a"> less intimate relationship with many people</label><br>
+    <input type="radio" name="ques101" value="b" required id="q101b" class="with-gap"><label class="radioLabel" for="q101b"> close, intimate relationship with a few people</label><br><br><br>
+
+    Q102. I PREFER<br>
+    <input type="radio" name="ques102" value="a" required id="q102a" class="with-gap"><label class="radioLabel" for="q102a"> applying current skills</label><br>
+    <input type="radio" name="ques102" value="b" required id="q102b" class="with-gap"><label class="radioLabel" for="q102b"> learning new skills</label><br><br><br>
+
+    Q103. I TAKE PRIDE IN BEING A<br>
+    <input type="radio" name="ques103" value="a" required id="q103a" class="with-gap"><label class="radioLabel" for="q103a"> thinking person</label><br>
+    <input type="radio" name="ques103" value="b" required id="q103b" class="with-gap"><label class="radioLabel" for="q103b"> feeling person</label><br><br><br>
+
+    Q104. I TAKE PRIDE IN BEING<br>
+    <input type="radio" name="ques104" value="a" required id="q104a" class="with-gap"><label class="radioLabel" for="q104a"> right most of the time</label><br>
+    <input type="radio" name="ques104" value="b" required id="q104b" class="with-gap"><label class="radioLabel" for="q104b"> open to suggestions</label><br><br><br>
+
+    Q105. WHEN STRUCK BY A THOUGHT OR FEELING, I TEND TO<br>
+    <input type="radio" name="ques105" value="a" required id="q105a" class="with-gap"><label class="radioLabel" for="q105a"> blurt in out</label><br>
+    <input type="radio" name="ques105" value="b" required id="q105b" class="with-gap"><label class="radioLabel" for="q105b"> keep it inside</label><br><br><br>
+
+    Q106. I LIKE TO THINK IN TERMS OF<br>
+    <input type="radio" name="ques106" value="a" required id="q106a" class="with-gap"><label class="radioLabel" for="q106a"> realities</label><br>
+    <input type="radio" name="ques106" value="b" required id="q106b" class="with-gap"><label class="radioLabel" for="q106b"> possibilities</label><br><br><br>
+
+    Q107. I PREFER<br>
+    <input type="radio" name="ques107" value="a" required id="q107a" class="with-gap"><label class="radioLabel" for="q107a"> confronting people and issues head on</label><br>
+    <input type="radio" name="ques107" value="b" required id="q107b" class="with-gap"><label class="radioLabel" for="q107b"> smoothing over conflicts and difficult issues</label><br><br><br>
+
+    Q108. I COME ACROSS TO OTHERS AS<br>
+    <input type="radio" name="ques108" value="a" required id="q108a" class="with-gap"><label class="radioLabel" for="q108a"> the orderly type</label><br>
+    <input type="radio" name="ques108" value="b" required id="q108b" class="with-gap"><label class="radioLabel" for="q108b"> the easy going type</label><br><br><br>
+
+    Q109. I PREFER GETTING INFORMATION BY<br>
+    <input type="radio" name="ques109" value="a" required id="q109a" class="with-gap"><label class="radioLabel" for="q109a"> listening to others, tell me about it</label><br>
+    <input type="radio" name="ques109" value="b" required id="q109b" class="with-gap"><label class="radioLabel" for="q109b"> reading about it myself</label><br><br><br>
+
+    Q110. I PREFER CHANGE THAT IS<br>
+    <input type="radio" name="ques110" value="a" required id="q110a" class="with-gap"><label class="radioLabel" for="q110a"> incremental and step-by-step</label><br>
+    <input type="radio" name="ques110" value="b" required id="q110b" class="with-gap"><label class="radioLabel" for="q110b"> sweeping  and dramatic</label><br><br><br>
+
+    Q111. I AM MOST LIKELY TO<br>
+    <input type="radio" name="ques111" value="a" required id="q111a" class="with-gap"><label class="radioLabel" for="q111a"> terminate an employee for unacceptable performance</label><br>
+    <input type="radio" name="ques111" value="b" required id="q111b" class="with-gap"><label class="radioLabel" for="q111b"> keep and develop an employee who is delivering unacceptable performance</label><br><br><br>
+
+    Q112. I COME TO CONCLUSION<br>
+    <input type="radio" name="ques112" value="a" required id="q112a" class="with-gap"><label class="radioLabel" for="q112a"> right away</label><br>
+    <input type="radio" name="ques112" value="b" required id="q112b" class="with-gap"><label class="radioLabel" for="q112b"> gradually</label><br><br><br>
+
+    Q113. I PREFER WORKING<br>
+    <input type="radio" name="ques113" value="a" required id="q113a" class="with-gap"><label class="radioLabel" for="q113a"> in a group</label><br>
+    <input type="radio" name="ques113" value="b" required id="q113b" class="with-gap"><label class="radioLabel" for="q113b"> alone</label><br><br><br>
+
+    Q114. I LIKE DISCUSSING AND EVALUATING<br>
+    <input type="radio" name="ques114" value="a" required id="q114a" class="with-gap"><label class="radioLabel" for="q114a"> the practical side of business</label><br>
+    <input type="radio" name="ques114" value="b" required id="q114b" class="with-gap"><label class="radioLabel" for="q114b"> the conceptual side of business</label><br><br><br>
+
+    Q115. I PAY MORE ATTENTION TO<br>
+    <input type="radio" name="ques115" value="a" required id="q115a" class="with-gap"><label class="radioLabel" for="q115a"> critiquing, then perhaps complimenting</label><br>
+    <input type="radio" name="ques115" value="b" required id="q115b" class="with-gap"><label class="radioLabel" for="q115b"> complimenting, then perhaps critiquing</label><br><br><br>
+
+    Q116. I TYPICALLY<br>
+    <input type="radio" name="ques116" value="a" required id="q116a" class="with-gap"><label class="radioLabel" for="q116a"> handle deadlines by planning in advance</label><br>
+    <input type="radio" name="ques116" value="b" required id="q116b" class="with-gap"><label class="radioLabel" for="q116b"> meet deadlines by last minute rush</label><br><br><br>
+
+    Q117. IN THE MIDST OF SIGNIFICANT EXTERNAL CHANGE, I USUALLY WANT TO<br>
+    <input type="radio" name="ques117" value="a" required id="q117a" class="with-gap"><label class="radioLabel" for="q117a"> do–think-do</label><br>
+    <input type="radio" name="ques117" value="b" required id="q117b" class="with-gap"><label class="radioLabel" for="q117b"> think-do-think</label><br><br><br>
+
+    Q118. I PREFER UNDERSTANDING<br>
+    <input type="radio" name="ques118" value="a" required id="q118a" class="with-gap"><label class="radioLabel" for="q118a"> the details before worrying about the full picture</label><br>
+    <input type="radio" name="ques118" value="b" required id="q118b" class="with-gap"><label class="radioLabel" for="q118b"> the full picture before dealing with any details</label><br><br><br>
+
+    Q119. I WORK TO IMPROVE ORGANIZATIONAL CAPABILITIES THROUGH<br>
+    <input type="radio" name="ques119" value="a" required id="q119a" class="with-gap"><label class="radioLabel" for="q119a"> systems</label><br>
+    <input type="radio" name="ques119" value="b" required id="q119b" class="with-gap"><label class="radioLabel" for="q119b"> people</label><br><br><br>
+
+    Q120. I AM MOST SUSCEPTIBLE THE STRATEGIC MISTAKES WHICH IS<br>
+    <input type="radio" name="ques120" value="a" required id="q120a" class="with-gap"><label class="radioLabel" for="q120a"> sticking to one strategy for too long</label><br>
+    <input type="radio" name="ques120" value="b" required id="q120b" class="with-gap"><label class="radioLabel" for="q120b"> drifting from one strategy to another</label><br><br><br>
+
+    Q121. OTHER PEOPLE WOULD CONSIDER ME TO BE MORE<br>
+    <input type="radio" name="ques121" value="a" required id="q121a" class="with-gap"><label class="radioLabel" for="q121a"> extroverted</label><br>
+    <input type="radio" name="ques121" value="b" required id="q121b" class="with-gap"><label class="radioLabel" for="q121b"> introverted</label><br><br><br>
+
+    Q122. WHILE EVALUATING BUSINESS, I LIKE TO THINK IN TERMS OF<br>
+    <input type="radio" name="ques122" value="a" required id="q122a" class="with-gap"><label class="radioLabel" for="q122a"> current performance</label><br>
+    <input type="radio" name="ques122" value="b" required id="q122b" class="with-gap"><label class="radioLabel" for="q122b"> future potential</label><br><br><br>
+
+    Q123. I ATTEMPT TO IMPROVE RESULTS FROM PEOPLE BY<br>
+    <input type="radio" name="ques123" value="a" required id="q123a" class="with-gap"><label class="radioLabel" for="q123a"> pointing out their failing</label><br>
+    <input type="radio" name="ques123" value="b" required id="q123b" class="with-gap"><label class="radioLabel" for="q123b"> applauding their striving</label><br><br><br>
+
+    Q124. I BELIEVE THE BEST WAY TO PREPARE FOR THE FUTURE IS TO<br>
+    <input type="radio" name="ques124" value="a" required id="q124a" class="with-gap"><label class="radioLabel" for="q124a"> carefully plan for it</label><br>
+    <input type="radio" name="ques124" value="b" required id="q124b" class="with-gap"><label class="radioLabel" for="q124b"> boldly invent</label><br><br><br>
+
+    <button class="btn waves-effect waves-light" type="submit" name="submit">Submit</button>
+    
+  </form>
+</div>
+  <br><br><br><br><br>
+  <style type="text/css">
+    [type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
+    font-size: 1.08rem !important;
+}
+
+.radioLabel{
+  color: #31849b !important;
+}
+
+  </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</body>
+</html>

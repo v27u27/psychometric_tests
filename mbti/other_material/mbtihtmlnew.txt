@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>MBTI test sample</title>
+</head>
+
+<body>
+
+	<p>MBTI Test sample</p>
+  <p style="text-align:justify">This inventory is designed to allow you to preferred type or natural preferences in dealing with both your inner and outer worlds when you are at work. While the Mysers-Briggs Type Indicator (a registered trademark of Consulting Psychologist Press, Inc.) is a validated instrument that provides your overall psychological type across all of your life’s activities; the exercise, which you will do below, is oriented specifically towards your working life. It is most important that you answer the questions according to the way you really behave in the work situations described. Avoid thinking about the way you wish you had behaved, or think you ought to act, or think your boss would like you to act. Think always, “This is the way I actually behave-this is how I think, or act, or decide, or choose in this situation.” Answer the questions as honestly and as objectively as possible. The closer you come to the truth about how you actually behave, the more useful the information will be to you.</p>  
+  <blockquote>
+  For every question mentioned below select the option that most accurately describes how usually act, think or feel 
+  </blockquote>
+
+  <form action="/cal" method="POST">
+    <br><br>
+
+
+    Q1. MY BEST IDEAS AT WORK COME FROM<br>
+    <input type="radio" name="ques1" value="a"> an interchange of ideas and sharing with others<br>
+    <input type="radio" name="ques1" value="b"> quite thought on my own<br><br><br>
+
+    Q2. WHEN I RUN A MEETING, I AM USUALLY<br>
+    <input type="radio" name="ques2" value="a"> disciplined about following my prepared agenda<br>
+    <input type="radio" name="ques2" value="b"> flexible and open to whatever comes up<br><br><br>
+
+    Q3. WHEN HANDLING A SUBORDINATE’S DEVELOPMENT, I AMMOST LIKELY TO<br>
+    <input type="radio" name="ques3" value="a"> discuss a problem I have with his or her behaviour<br>
+    <input type="radio" name="ques3" value="b"> dislike telling him or her unpleasant things<br><br><br>
+
+    Q4. I PREFER THE PLACE WHERE I WORK TO BE<br>
+    <input type="radio" name="ques4" value="a"> structured with clear rules and regulations<br>
+    <input type="radio" name="ques4" value="b"> more open-ended and liassez-faire<br><br><br>
+
+    Q5. I WOULD RATHER HAVE A SUPERIOR WITH WHOM I HAVE<br>
+    <input type="radio" name="ques5" value="a"> a  lot of day-by-day interaction<br>
+    <input type="radio" name="ques5" value="b"> only frequent interaction<br><br><br>
+
+    Q6. I PREFER MEETING WHERE MOST TIME IS SPENT ON<br>
+    <input type="radio" name="ques6" value="a"> the application of the ideas discussed<br>
+    <input type="radio" name="ques6" value="b"> the ideas themselves<br><br><br>
+
+    Q7. I PREFER A WORK ENVIRONMENT WHERE<br>
+    <input type="radio" name="ques7" value="a"> frequent differences of opinion breed interesting discussion and ideas<br>
+    <input type="radio" name="ques7" value="b"> conflict is reduced by avoiding discussions about differences of opinion<br><br><br>
+
+    Q8. I PREFER PROJECTS AT WORK<br>
+    <input type="radio" name="ques8" value="a"> to be well-defined and planned out<br>
+    <input type="radio" name="ques8" value="b"> to allow for flexible interpretation<br><br><br>
+
+    Q9. I PREFER TO SPEND MY LUNCH HOUR<br>
+    <input type="radio" name="ques9" value="a"> eating with a group<br>
+    <input type="radio" name="ques9" value="b"> eating alone or with one close colleague<br><br><br>
+
+    Q10. IF MY BOSS GIVES ME A DIFFICULT TASK, I USUALLY<br>
+    <input type="radio" name="ques10" value="a"> collect as much information as possible before starting<br>
+    <input type="radio" name="ques10" value="b"> dive in and rely on my ability to work things out<br><br><br>
+
+    Q11. IN A PERFORMANCE APPRAISAL, I PREFER MY BOSS TO WRITE THAT I AM<br>
+    <input type="radio" name="ques11" value="a"> intelligent and reasonable<br>
+    <input type="radio" name="ques11" value="b"> warm and personable<br><br><br>
+
+    Q12. I PREFER TO<br>
+    <input type="radio" name="ques12" value="a"> plan my workday carefully in advance<br>
+    <input type="radio" name="ques12" value="b"> let the day progress and see how things turn out<br><br><br>
+
+    Q13. I MORE OFTEN PREFER TO KEEP MY OFFICE DOOR<br>
+    <input type="radio" name="ques13" value="a"> open<br>
+    <input type="radio" name="ques13" value="b"> closed<br><br><br>
+
+    Q14. WHEN A NEW IDEA FLASHES INTO MY MIND,I USUALLY<br>
+    <input type="radio" name="ques14" value="a"> like to test it carefully before I get excited<br>
+    <input type="radio" name="ques14" value="b"> get excited and want to follow through quickly<br><br><br>
+
+    Q15. IN A TEAM MEETING, I PREFER TO EMPHASIZE<br>
+    <input type="radio" name="ques15" value="a"> an analytical discussion of the facts<br>
+    <input type="radio" name="ques15" value="b"> a discussion of the values involved<br><br><br>
+
+    Q16. I PREFER A JOB WHERE REWARDS ARE <br>
+    <input type="radio" name="ques16" value="a"> seen clearly in regular period<br>
+    <input type="radio" name="ques16" value="b"> stretched out over long periods of time<br><br><br>
+
+    Q17. I DRESS FOR WORK<br>
+    <input type="radio" name="ques17" value="a"> so that other people notice and admire my clothing<br>
+    <input type="radio" name="ques17" value="b"> in a way that blends in with the norm<br><br><br>
+
+    Q18. WHEN I SOLVE PROBLEMS, I AM MORE LIKELY TO<br>
+    <input type="radio" name="ques18" value="a"> give most weights to the facts in front of me<br>
+    <input type="radio" name="ques18" value="b"> explore the full range of possibilities<br><br><br>
+
+    Q19. IF I HAVE TO CONFRONT COLLEAGUES OR SUBORDINATES, I AM USUALLY<br>
+    <input type="radio" name="ques19" value="a"> interested in making sure I give them the facts accurately<br>
+    <input type="radio" name="ques19" value="b"> more interested in making sure I don’t hurt their feelings<br><br><br>
+
+    Q20. I WOULD RATHER HAVE A BOSS WHO<br>
+    <input type="radio" name="ques20" value="a"> provides a lot of structure and organization<br>
+    <input type="radio" name="ques20" value="b"> leaves me to do things however they work best for me<br><br><br>
+
+    Q21. I PREFER MOST OF MY JOBS AT WORK TO BE<br>
+    <input type="radio" name="ques21" value="a"> a continuing series of short takes<br>
+    <input type="radio" name="ques21" value="b"> long projects on which I can concentrate my efforts<br><br><br>
+
+    Q22. WHEN I WRITE A REPORT, I USUALLY THINK FIRST OF<br>
+    <input type="radio" name="ques22" value="a"> the details<br>
+    <input type="radio" name="ques22" value="b"> the big picture<br><br><br>
+
+    Q23. WHEN I HAVE A DECISION TO MAKE AT WORK, I USUALLY<br>
+    <input type="radio" name="ques23" value="a"> reason it through regardless of my feelings<br>
+    <input type="radio" name="ques23" value="b"> consider my feelings to be very important<br><br><br>
+
+    Q24. I PREFER MY OWN OFFICE TO BE ONE IN WHICH<br>
+    <input type="radio" name="ques24" value="a"> things are orderly, organized and systematic<br>
+    <input type="radio" name="ques24" value="b"> there is a creative array of projects, papers and books<br><br><br>
+
+    Q25. WHEN I HAVE LUNCH WITH COLLEAGUES, I WOULD RATHER<br>
+    <input type="radio" name="ques25" value="a"> talk about people<br>
+    <input type="radio" name="ques25" value="b"> talk about ideas<br><br><br>
+
+    Q26. I WOULD RATHER HAVE MY BOSS TRUST ME WITH<br>
+    <input type="radio" name="ques26" value="a"> practical problems to solve<br>
+    <input type="radio" name="ques26" value="b"> policy problems to solve<br><br><br>
+
+    Q27. WHEN FACED WITH A DECISION AT WORK, I USUALLY PREFER TO<br>
+    <input type="radio" name="ques27" value="a"> think things though<br>
+    <input type="radio" name="ques27" value="b"> trust gut feelings<br><br><br>
+
+    Q28. I PREFER THE WORK I DO EVERYDAY TO<br>
+    <input type="radio" name="ques28" value="a"> be continuous and relatively predictable<br>
+    <input type="radio" name="ques28" value="b"> have frequent changes in activities and schedules<br><br><br>
+
+    Q29. WHEN I HAVE TO ORGANIZE AND RUN A MEETING, I MORE OFTEN<br>
+    <input type="radio" name="ques29" value="a"> feel satisfied that I have the opportunity to lead<br>
+    <input type="radio" name="ques29" value="b"> prefer that someone else had the responsibility<br><br><br>
+
+    Q30. IF I WERE ASKED TO PREPARE A STRATEGIC PLAN, I WOULD BE MORE LIKELY TO<br>
+    <input type="radio" name="ques30" value="a"> emphasize what is practical now<br>
+    <input type="radio" name="ques30" value="b"> orient plan toward future possibilities<br><br><br>
+
+    Q31. WHEN FACED WITH A DECISION AT WORK, I USUALLY<br>
+    <input type="radio" name="ques31" value="a"> focus on the facts and figures<br>
+    <input type="radio" name="ques31" value="b"> give careful attention to people’s feelings<br><br><br>
+
+    Q32. WHEN MY BOSS GIVES ME A NEW PROJECT, I USUALLY PREFER<br>
+    <input type="radio" name="ques32" value="a"> a clear statement of what is expected<br>
+    <input type="radio" name="ques32" value="b"> to be left to work it out the way I want<br><br><br>
+
+    Q33. I PREFER TO HAVE<br>
+    <input type="radio" name="ques33" value="a"> a large group of colleagues at work<br>
+    <input type="radio" name="ques33" value="b"> a few colleagues that I know well<br><br><br>
+
+    Q34. IN ONE-TO-ONE MEETING, I AM MORE LIKELY TO<br>
+    <input type="radio" name="ques34" value="a"> listen quietly and absorb details<br>
+    <input type="radio" name="ques34" value="b"> anticipate the speaker’s words and interact<br><br><br>
+
+    Q35. IF SOMEONE ARGUES FOR A POLICY OR DECISION I MAKE, I USUALLY<br>
+    <input type="radio" name="ques35" value="a"> remain firm<br>
+    <input type="radio" name="ques35" value="b"> seek to avoid unpleasantness, anger and disharmony<br><br><br>
+
+    Q36. WHEN I HAVE A TOUGH CHOICE AT WORK, I USUALLY<br>
+    <input type="radio" name="ques36" value="a"> am satisfied that it is done<br>
+    <input type="radio" name="ques36" value="b"> wish that I was open to other alternatives<br><br><br>
+
+    Q37. WHEN I ATTEND A COMPANY OUTING, I USUALLY<br>
+    <input type="radio" name="ques37" value="a"> walk around and meet people I may not know well<br>
+    <input type="radio" name="ques37" value="b"> hang out with the colleagues, I know best<br><br><br>
+
+    Q38. I THINK MY COLLEAGUES SEE ME MORE<br>
+    <input type="radio" name="ques38" value="a"> as a here-and-now person<br>
+    <input type="radio" name="ques38" value="b"> as someone with an orientation towards the future<br><br><br>
+
+    Q39. WHEN I HAVE A LONG AND COMPLEX REPORT TO READ, I AM MORE LIKELY TO<br>
+    <input type="radio" name="ques39" value="a"> be patient and study the details<br>
+    <input type="radio" name="ques39" value="b"> try and get the general ideas and see how I feel about them<br><br><br>
+
+    Q40. I PREFER MY WORK ENVIRONMENT TO BE<br>
+    <input type="radio" name="ques40" value="a"> comfortable, predictable and stable<br>
+    <input type="radio" name="ques40" value="b"> flexible and changing<br><br><br>
+
+    Q41. MY COLLEAGUES AT WORK ARE MORE LIKELY TO DESCRIBE ME AS<br>
+    <input type="radio" name="ques41" value="a"> an energetic team player<br>
+    <input type="radio" name="ques41" value="b"> a quite and thoughtful employee<br><br><br>
+
+    Q42. WHEN I PREPARE A PRESENTATION, I PREFER TO EMPHASISE<br>
+    <input type="radio" name="ques42" value="a"> the use of real facts from my own experience<br>
+    <input type="radio" name="ques42" value="b"> the discussion of ideas and concepts<br><br><br>
+
+    Q43. I PREFER TO WORK WITH COLLEAGUES WHO<br>
+    <input type="radio" name="ques43" value="a"> rely heavily on logic<br>
+    <input type="radio" name="ques43" value="b"> look more often to their feelings<br><br><br>
+
+    Q44. IF SOMEONE IN MY TEAM IS LATE WITH A SCHEDULED TASK, I USUALLY<br>
+    <input type="radio" name="ques44" value="a"> get impatient and annoyed<br>
+    <input type="radio" name="ques44" value="b"> look for ways to stretch the deadlines<br><br><br>
+
+    Q45. WHEN I ATTEND A TRAINING SESSION, I AM MORE LIKELY TO<br>
+    <input type="radio" name="ques45" value="a"> participate openly and actively<br>
+    <input type="radio" name="ques45" value="b"> let other takes the active role<br><br><br>
+
+    Q46. WHEN COLLEAGUES AND SUBORDINATES PRESENT IDEAS TO ME, I AM USUALLY MORE INTERESTED IN<br>
+    <input type="radio" name="ques46" value="a"> immediately useful ideas<br>
+    <input type="radio" name="ques46" value="b"> ideas with innovative approaches<br><br><br>
+
+    Q47. IF I HAVE TO DEAL WITH A COLLEAGUE’S FEELINGS, I PREFER TO BE<br>
+    <input type="radio" name="ques47" value="a"> truthful even if I can’t be tactful<br>
+    <input type="radio" name="ques47" value="b"> tactful even if I can’t tell the truth<br><br><br>
+
+    Q48. I PREFER PROJECTS THAT<br>
+    <input type="radio" name="ques48" value="a"> have a clear ending date when I know they will be finished<br>
+    <input type="radio" name="ques48" value="b"> may remain open-ended to ensure that all bases are covered<br><br><br>
+
+    Q49. WHEN I HAVE A DECISION TO MAKE AT WORK, I MORE OFTEN<br>
+    <input type="radio" name="ques49" value="a"> talk it over with a number of people before I decide<br>
+    <input type="radio" name="ques49" value="b"> spend most of my time working it out in my own head<br><br><br>
+
+    Q50. I PREFER A JOB WHERE I CAN<br>
+    <input type="radio" name="ques50" value="a"> use my experience to work at familiar tasks<br>
+    <input type="radio" name="ques50" value="b"> confront ideas and problems that are new to me<br><br><br>
+
+    Q51. WHEN I AM AT A MEETING AND A DIFFERENCE OF OPINION COMES UP, I USUALLY<br>
+    <input type="radio" name="ques51" value="a"> defend the side I think is most logical<br>
+    <input type="radio" name="ques51" value="b"> try to create a harmonious atmosphere and solution<br><br><br>
+
+    Q52. WHEN I GET A NEW PROJECT, I USUALLY PREFER TO<br>
+    <input type="radio" name="ques52" value="a"> get to it and complete it as quickly as possible<br>
+    <input type="radio" name="ques52" value="b"> move as slowly as allowable and explore various approaches<br><br><br>
+
+    Q53. I AM MORE INTERESTED IN<br>
+    <input type="radio" name="ques53" value="a"> the actual tasks I am doing day-by-day<br>
+    <input type="radio" name="ques53" value="b"> the thoughts I have about my work<br><br><br>
+
+    Q54. WHEN I ATTEND A TRAINING SESSION, I USUALLY PREFER<br>
+    <input type="radio" name="ques54" value="a"> experiential processes<br>
+    <input type="radio" name="ques54" value="b"> information and abstraction<br><br><br>
+
+    Q55. WHEN I HAVE A MEETING WITH A COLLEAGUE, I USUALLY<br>
+    <input type="radio" name="ques55" value="a"> get through it quickly in business like manner<br>
+    <input type="radio" name="ques55" value="b"> linger over the sociable interaction<br><br><br>
+
+    Q56. I WOULD RATHER BE IN A JOB WITH <br>
+    <input type="radio" name="ques56" value="a"> activities requiring me to reach a conclusion<br>
+    <input type="radio" name="ques56" value="b"> activities that allow me to stay open to my experience<br><br><br>
+
+    Q57. WHEN I ASK A COLLEAGUE FOR ADVICE OR HELP, I AM USUALLY<br>
+    <input type="radio" name="ques57" value="a"> comfortable<br>
+    <input type="radio" name="ques57" value="b"> somewhat ill at else<br><br><br>
+
+    Q58. IN A MEETING OR WHEN READING A REPORT, I AM MORE LIKELY TO<br>
+    <input type="radio" name="ques58" value="a"> remember the facts presented<br>
+    <input type="radio" name="ques58" value="b"> remember mostly the concepts presented<br><br><br>
+
+    Q59. WHEN COLLEAGUES ASK MY ADVICE ABOUT A WORK MATTER, I MORE OFTEN<br>
+    <input type="radio" name="ques59" value="a"> guide them toward a decision based purely on logic<br>
+    <input type="radio" name="ques59" value="b"> help them explore the values and policies in the situation<br><br><br>
+
+    Q60. WHEN I AM IN A MEETING, I AM USUALLY MORE INTERESTED IN<br>
+    <input type="radio" name="ques60" value="a"> getting the job done as quickly as possible<br>
+    <input type="radio" name="ques60" value="b"> spending time making sure everyone gets heard<br><br><br>
+
+    Q61. WHEN I AM INTERRUPTED IN THE MIDDLE OF A TOUGH JOB, I USUALLY<br>
+    <input type="radio" name="ques61" value="a"> welcome the opportunity to talk to someone<br>
+    <input type="radio" name="ques61" value="b"> prefer to be left alone with my thoughts<br><br><br>
+
+    Q62. WHEN I READ A REPORT, I USUALLY GO FIRST TO<br>
+    <input type="radio" name="ques62" value="a"> the body of detailed information<br>
+    <input type="radio" name="ques62" value="b"> the summary of executive overview<br><br><br>
+
+    Q63. WHEN I AM PUTTING FORWARD A NEW IDEA AT WORK, I MORE OFTEN<br>
+    <input type="radio" name="ques63" value="a"> remain firm about the correctness of it<br>
+    <input type="radio" name="ques63" value="b"> try to persuade others by appealing to their sense of value<br><br><br>
+
+    Q64. IF MY BOSS INSISTS THAT I SCHEDULE MY WORKDAY, I FEEL<br>
+    <input type="radio" name="ques64" value="a"> satisfied  that I am organized.<br>
+    <input type="radio" name="ques64" value="b"> try to persuade others by appealing to their sense of value.<br><br><br>
+
+    Q65. WHEN I AM AT A MEETING AND SOME ONE TELLS A JOKE, I USUALLY<br>
+    <input type="radio" name="ques65" value="a"> laugh and think of one to tell <br>
+    <input type="radio" name="ques65" value="b"> enjoy the joke quietly <br><br><br>
+
+    Q66. IN A PERFORMANCE APPRAISAL, IT WOULD BE MORE ACCURATE IF MY BOSS IS <br>
+    <input type="radio" name="ques66" value="a"> practical<br>
+    <input type="radio" name="ques66" value="b"> imaginative<br><br><br>
+
+    Q67. I AM USUALLY MORE INTRESTED IN HOW MY COLLEAGUES<br>
+    <input type="radio" name="ques67" value="a"> think about the problems<br>
+    <input type="radio" name="ques67" value="b"> feel about the problems<br><br><br>
+
+    Q68. WHEN A NEW AND UNUSUAL POLICY ANNOUNCEMENT IS ISSUED AT WORK, I AM USUALLY<br>
+    <input type="radio" name="ques68" value="a"> annoyed or otherwise upset at the changes<br>
+    <input type="radio" name="ques68" value="b"> interested in seeing how I will handle the new environment<br><br><br>
+
+    Q69. IN A MEETING I USUALLY <br>
+    <input type="radio" name="ques69" value="a"> speak out directly when I want to<br>
+    <input type="radio" name="ques69" value="b"> wait until I am asked directly before I speak<br><br><br>
+
+    Q70. WHEN I START A NEW  PROJECT, I USUALLY <br>
+    <input type="radio" name="ques70" value="a"> write a step-by-step plan early in the process<br>
+    <input type="radio" name="ques70" value="b"> wait and see how things develop before planning.<br><br><br>
+
+    Q71. WHEN I HEAR A PRESENTATION FROM A COLLEGUE, I MAY MORE LIKELY TO BE<br>
+    <input type="radio" name="ques71" value="a"> openly and intellectually critical<br>
+    <input type="radio" name="ques71" value="b"> careful in voicing my opinions, especially when I disagree<br><br><br>
+
+    Q72. IF THERE COULDN’T BE BOTH, I WOULD RATHER HAVE COLLEAGUES WHO ARE<br>
+    <input type="radio" name="ques72" value="a"> well-organized<br>
+    <input type="radio" name="ques72" value="b"> spontaneous<br><br><br>
+
+    Q73. I WOULD PREFER TO WORK IN A COMPANY WHERE<br>
+    <input type="radio" name="ques73" value="a"> everyone works together in an open, active environment<br>
+    <input type="radio" name="ques73" value="b"> people work independently in their own spaces<br><br><br>
+
+    Q74. I MORE OFTEN SEEK OUT WORK THAT APPLIES<br>
+    <input type="radio" name="ques74" value="a"> my practical skills and nature<br>
+    <input type="radio" name="ques74" value="b"> my ability to create new ideas and things<br><br><br>
+
+    Q75. WHEN I HAVE TO MAKE A DECISION AT WORK, I AM MORE LIKELY TO <br>
+    <input type="radio" name="ques75" value="a"> analyze the situation logically without considering my values and feelings<br>
+    <input type="radio" name="ques75" value="b"> put a strong emphasis on applying my values and feelings to the solution<br><br><br>
+
+    Q76. WHEN I PRESENT MY VIEWS IN A MEETING, I AM USUALLY <br>
+    <input type="radio" name="ques76" value="a"> decisive<br>
+    <input type="radio" name="ques76" value="b"> open to having others suggest changes and other views<br><br><br>
+
+    Q77. WHEN I NEED TO PASS ON AN IDEA OR INFORMATION, I PREFER TO <br>
+    <input type="radio" name="ques77" value="a"> talk directly to people about it<br>
+    <input type="radio" name="ques77" value="b"> put in writing <br><br><br>
+
+    Q78. MY LEADERSHIP STYLE IS BEST DESCRIBED AS<br>
+    <input type="radio" name="ques78" value="a"> practical<br>
+    <input type="radio" name="ques78" value="b"> visionary<br><br><br>
+
+    Q79. IN A PERFORMANCE APPRAISAL MEETING, I AM USUALLY MORE LIKELY TO<br>
+    <input type="radio" name="ques79" value="a"> be frank and honest regardless of feelings<br>
+    <input type="radio" name="ques79" value="b"> try to smooth over any problems and avoid hurt feelings<br><br><br>
+
+    Q80. WHEN I AM DISCUSSING AN IMPORTANT ISSUE AT MEETING, I USUALLY<br>
+    <input type="radio" name="ques80" value="a"> try to reach a definite conclusion quickly<br>
+    <input type="radio" name="ques80" value="b"> keep the options open<br><br><br>
+
+    Q81. I ENJOY MORE<br>
+    <input type="radio" name="ques81" value="a"> a workday filled with variety and interaction with others<br>
+    <input type="radio" name="ques81" value="b"> working without interacting with others for long period of time<br><br><br>
+
+    Q82. I PREFER A WORK SITUATION THAT IS <br>
+    <input type="radio" name="ques82" value="a"> stable with little changes<br>
+    <input type="radio" name="ques82" value="b"> full of changes<br><br><br>
+
+    Q83. MY COLLEAGUES WOULD BE MORE LIKELY TO DESCRIBE MY BEHAVIOR AT WORK AS<br>
+    <input type="radio" name="ques83" value="a"> cool, calm and objective<br>
+    <input type="radio" name="ques83" value="b"> warm  and feeling  <br><br><br>
+
+    Q84. AT WORK, I PREFER PROJECTS<br>
+    <input type="radio" name="ques84" value="a"> on which I work  quickly to make a short deadline<br>
+    <input type="radio" name="ques84" value="b"> that have longer and more flexible deadlines<br><br><br>
+
+    Q85. WHEN I AM IN A MEETING WITH COLLEAGUES AND A HIGHER-RANKING MANAGER OR EXECUTIVE COME IN, I USUALLY<br>
+    <input type="radio" name="ques85" value="a"> greet the person in a conformable and friendly way<br>
+    <input type="radio" name="ques85" value="b"> wait until I see how others react to him or her<br><br><br>
+
+    Q86. WHEN I THINK OF MY MOST IMPORTANT WORK ASSETS, THEY ARE<br>
+    <input type="radio" name="ques86" value="a"> more in the realm of the practical <br>
+    <input type="radio" name="ques86" value="b"> more inclined toward the realm of ideas<br><br><br>
+
+    Q87. IN A TRAINING SESSION ON COURSE, I PREFER A TRAINER WHO DEPENDS MORE ON <br>
+    <input type="radio" name="ques87" value="a"> precision and logic<br>
+    <input type="radio" name="ques87" value="b"> emotion and experience<br><br><br>
+
+    Q88. I USUALLY PUSH MY COLLEAGUES OR SUBORDINATES FOR <br>
+    <input type="radio" name="ques88" value="a"> quick decision making.<br>
+    <input type="radio" name="ques88" value="b"> through review, even is at risk of delaying decisions<br><br><br>
+
+    Q89. IN A NEW GROUP SETTING, I WOULD PREFER<br>
+    <input type="radio" name="ques89" value="a"> joining in a group discussion <br>
+    <input type="radio" name="ques89" value="b"> talking individually with selected people<br><br><br>
+
+    Q90. I GET ALONG BETTER WITH<br>
+    <input type="radio" name="ques90" value="a"> realistic people<br>
+    <input type="radio" name="ques90" value="b"> imaginative people<br><br><br>
+
+    Q91. I AM VIEWED BY OTHERS AS<br>
+    <input type="radio" name="ques91" value="a"> tough - minded<br>
+    <input type="radio" name="ques91" value="b"> warm - hearted<br><br><br>
+
+    Q92. I PREFER PLANNING TO BE <br>
+    <input type="radio" name="ques92" value="a"> structured and laid out well in advance<br>
+    <input type="radio" name="ques92" value="b"> flexible and open to frequent adjustment<br><br><br>
+
+    Q93. I AM VIEWED MORE OFTEN BY OTHERS AS <br>
+    <input type="radio" name="ques93" value="a"> talkative and easy to know<br>
+    <input type="radio" name="ques93" value="b"> reserved, quiet and harder to know<br><br><br>
+
+    Q94. I THINK ABOUT BUSINESS STRATEGY IN TERMS OF<br>
+    <input type="radio" name="ques94" value="a"> a specific plan<br>
+    <input type="radio" name="ques94" value="b"> a broad vision<br><br><br>
+
+    Q95. WHILE COMMUNICATING WITH OTHERS IN THE ORGANIZATION, I PREFER<br>
+    <input type="radio" name="ques95" value="a"> telling it like it is<br>
+    <input type="radio" name="ques95" value="b"> telling it in a way that will not offend or hurt others<br><br><br>
+
+    Q96. I ENJOY BEING<br>
+    <input type="radio" name="ques96" value="a"> organized<br>
+    <input type="radio" name="ques96" value="b"> flexible<br><br><br>
+
+    Q97. I GET MORE EXCITED ABOUT<br>
+    <input type="radio" name="ques97" value="a"> people and things<br>
+    <input type="radio" name="ques97" value="b"> ideas and thoughts<br><br><br>
+
+    Q98. I TAKE PRIDE IN BEING<br>
+    <input type="radio" name="ques98" value="a"> conventional and orthodox<br>
+    <input type="radio" name="ques98" value="b"> original and unorthodox<br><br><br>
+
+    Q99. I LOOK OTHERS MISTAKES WITH<br>
+    <input type="radio" name="ques99" value="a"> tolerance<br>
+    <input type="radio" name="ques99" value="b"> forgiveness<br><br><br>
+
+    Q100. I LIKE TO THINK IN TERMS OF<br>
+    <input type="radio" name="ques100" value="a"> making things happen<br>
+    <input type="radio" name="ques100" value="b"> letting things happen<br><br><br>
+
+    Q101. I ENJOY<br>
+    <input type="radio" name="ques101" value="a"> less intimate relationship with many people<br>
+    <input type="radio" name="ques101" value="b"> close, intimate relationship with a few people<br><br><br>
+
+    Q102. I PREFER<br>
+    <input type="radio" name="ques102" value="a"> applying current skills<br>
+    <input type="radio" name="ques102" value="b"> learning new skills<br><br><br>
+
+    Q103. I TAKE PRIDE IN BEING A <br>
+    <input type="radio" name="ques103" value="a"> thinking person<br>
+    <input type="radio" name="ques103" value="b"> feeling person<br><br><br>
+
+    Q104. I TAKE PRIDE IN BEING<br>
+    <input type="radio" name="ques104" value="a"> right most of the time<br>
+    <input type="radio" name="ques104" value="b"> open to suggestions<br><br><br>
+
+    Q105. WHEN STRUCK BY A THOUGHT OR FEELING, I TEND TO<br>
+    <input type="radio" name="ques105" value="a"> blurt in out<br>
+    <input type="radio" name="ques105" value="b"> keep it inside<br><br><br>
+
+    Q106. I LIKE TO THINK IN TERMS OF<br>
+    <input type="radio" name="ques106" value="a"> realities<br>
+    <input type="radio" name="ques106" value="b"> possibilities<br><br><br>
+
+    Q107. I PREFER<br>
+    <input type="radio" name="ques107" value="a"> confronting people and issues head on<br>
+    <input type="radio" name="ques107" value="b"> smoothing over conflicts and difficult issues<br><br><br>
+
+    Q108. I COME ACROSS TO OTHERS AS <br>
+    <input type="radio" name="ques108" value="a"> the orderly type<br>
+    <input type="radio" name="ques108" value="b"> the easy going type<br><br><br>
+
+    Q109. I PREFER GETTING INFORMATION BY<br>
+    <input type="radio" name="ques109" value="a"> listening to others, tell me about it<br>
+    <input type="radio" name="ques109" value="b"> reading about it myself<br><br><br>
+
+    Q110. I PREFER CHANGE THAT IS <br>
+    <input type="radio" name="ques110" value="a"> incremental and step-by-step<br>
+    <input type="radio" name="ques110" value="b"> sweeping  and dramatic<br><br><br>
+
+    Q111. I AM MOST LIKELY TO <br>
+    <input type="radio" name="ques111" value="a"> terminate an employee for unacceptable performance<br>
+    <input type="radio" name="ques111" value="b"> keep and develop an employee who is delivering unacceptable performance<br><br><br>
+
+    Q112. I COME TO CONCLUSION<br>
+    <input type="radio" name="ques112" value="a"> right away<br>
+    <input type="radio" name="ques112" value="b"> gradually<br><br><br>
+
+    Q113. I PREFER WORKING<br>
+    <input type="radio" name="ques113" value="a"> in a group<br>
+    <input type="radio" name="ques113" value="b"> alone<br><br><br>
+
+    Q114. I LIKE DISCUSSING AND EVALUATING<br>
+    <input type="radio" name="ques114" value="a"> the practical side of business<br>
+    <input type="radio" name="ques114" value="b"> the conceptual side of business<br><br><br>
+
+    Q115. I PAY MORE ATTENTION TO<br>
+    <input type="radio" name="ques115" value="a"> critiquing, then perhaps complimenting<br>
+    <input type="radio" name="ques115" value="b"> complimenting, then perhaps critiquing<br><br><br>
+
+    Q116. I TYPICALLY <br>
+    <input type="radio" name="ques116" value="a"> handle deadlines by planning in advance<br>
+    <input type="radio" name="ques116" value="b"> meet deadlines by last minute rush<br><br><br>
+
+    Q117. IN THE MIDST OF SIGNIFICANT EXTERNAL CHANGE, I USUALLY WANT TO<br>
+    <input type="radio" name="ques117" value="a"> do–think-do<br>
+    <input type="radio" name="ques117" value="b"> think-do-think<br><br><br>
+
+    Q118. I PREFER UNDERSTANDING<br>
+    <input type="radio" name="ques118" value="a"> the details before worrying about the full picture<br>
+    <input type="radio" name="ques118" value="b"> the full picture before dealing with any details<br><br><br>
+
+    Q119. I WORK TO IMPROVE ORGANIZATIONAL CAPABILITIES THROUGH<br>
+    <input type="radio" name="ques119" value="a"> systems<br>
+    <input type="radio" name="ques119" value="b"> people<br><br><br>
+
+    Q120. I AM MOST SUSCEPTIBLE THE STRATEGIC MISTAKES WHICH IS<br>
+    <input type="radio" name="ques120" value="a"> sticking to one strategy for too long<br>
+    <input type="radio" name="ques120" value="b"> drifting from one strategy to another<br><br><br>
+
+    Q121. OTHER PEOPLE WOULD CONSIDER ME TO BE MORE<br>
+    <input type="radio" name="ques121" value="a"> extroverted<br>
+    <input type="radio" name="ques121" value="b"> introverted<br><br><br>
+
+    Q122. WHILE EVALUATING BUSINESS, I LIKE TO THINK IN TERMS OF<br>
+    <input type="radio" name="ques122" value="a"> current performance<br>
+    <input type="radio" name="ques122" value="b"> future potential<br><br><br>
+
+    Q123. I ATTEMPT TO IMPROVE RESULTS FROM PEOPLE BY<br>
+    <input type="radio" name="ques123" value="a"> pointing out their failing<br>
+    <input type="radio" name="ques123" value="b"> applauding their striving<br><br><br>
+
+    Q124. I BELIEVE THE BEST WAY TO PREPARE FOR THE FUTURE IS TO<br>
+    <input type="radio" name="ques124" value="a"> carefully plan for it<br>
+    <input type="radio" name="ques124" value="b"> boldly invent<br><br><br>
+
+
+
+    <br><br><br>
+    <button type="submit" name="submit">Submit</button>
+    
+  </form>
+
+  <br><br><br><br><br>
+	
+  <p>
+    Highest Total is <%= @great_return %>
+  </p>
+
+</body>
+</html>
