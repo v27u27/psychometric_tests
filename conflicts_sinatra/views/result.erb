@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>How I Act in Conflicts result</title>
+<style type="text/css">
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  /* Tablet Landscape */
+  @media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+  }
+
+  /* Tabled Portrait */
+  @media screen and (max-width: 768px) {
+      #primary { width:100%; }
+      #secondary { width:100%; margin:0; border:none; }
+  }
+  @media (min-device-width:600px) {
+      img[data-src-600px] {
+          content: attr(data-src-600px, url);
+      }
+  }
+
+  @media (min-device-width:800px) {
+      img[data-src-800px] {
+          content: attr(data-src-800px, url);
+      }
+  }
+  html { font-size:100%; }
+  @media (min-width: 640px) { body {font-size:1rem;} } 
+  @media (min-width:960px) { body {font-size:1.2rem;} } 
+  @media (min-width:1100px) { body {font-size:1.5rem;} }
+  @media (min-width:1300px) { body {font-size:1.1rem;} } 
+</style>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+</head>
+
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+<div class="container" align="center">
+
+   <table class="responsive-table">
+        <thead>
+          <tr>
+              <th>Avoiding TURTLE</th>
+              <th>Forcing SHARK</th>
+              <th>Smoothing TEDDY BEAR</th>
+              <th>Compromising FOX</th>
+              <th>Confronting OWL</th>
+          </tr>
+        </thead>
+
+        <tbody align="center">
+          <tr>
+            <td><%= col1 %></td>
+            <td><%= col2 %></td>
+            <td><%= col3 %></td>
+            <td><%= col4 %></td>
+            <td><%= col5 %></td>
+          </tr>
+        </tbody>
+      </table>
+      <br><br>
+      <p>
+      <h5>Highest is <b><u><%= high1 %></u></b> with score <%= high1num %> </h5><br>
+      <h5>Second Highest is <b><u><%= high2 %></u></b> with score <%= high2num %></h5><br>
+      <h5>Collapsing Score is between <b><u><%= collapsing1 %></u></b> and <b><u><%= collapsing2 %></u></b></h5><br>
+    </p>
+
+
+  
+  <a href="/"><h5>Take Test Again</h5></a>
+</div>
+
+<br><br><br><br><br><br>
+
+<div id="footer">
+  <footer class="page-footer" >
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="white-text">
+          <a class="vk" href="http://vinayak.xyz" target="_blank"><h5>© Vinayak</h5> </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+  <style type="text/css">
+    .vk{
+      color: white !important;
+    }
+  </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</body>
+</html>
