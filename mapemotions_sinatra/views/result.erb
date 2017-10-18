@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>MBTI test result</title>
+<title>Map your Emotions Result</title>
 <style type="text/css">
   #footer {
     position: fixed;
@@ -48,22 +48,44 @@
 
 <div class="container" align="center">
 
-   <div class="row" id="resCard" align="center">
-     <div class="col s12 m6 offset-m3">
-        <div class="card-panel teal">
-          <span horizontal-align="center" class="white-text">
-            <h5>Your Personality Type is</h5><br><br>
-            <h2 text-align="center"> <%= my_result %> </h2>
-          </span>
-        </div>
-      </div>
-  </div>
+   <table class="responsive-table">
+        <thead>
+          <tr>
+              <th></th>
+              <th>Score</th>
+              <th>Percentage</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th>PES</th>
+            <td><%= pes_score %></td>
+            <td><%= pes_percent %></td>
+          </tr>
+          <tr>
+            <th>AES</th>
+            <td><%= aes_score %></td>
+            <td><%= aes_percent %></td>
+          </tr>
+          <tr>
+            <th>CES</th>
+            <td><%= ces_score %></td>
+            <td><%= ces_percent %></td>
+          </tr>
+        </tbody>
+      </table>
+      <br><br>
+      PES = Parent Ego State &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      AES = Adult Ego State &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      CES = Child Ego State
+      <br><br>
 
 
   <br>
   <a href="/"><h5>Take Test Again</h5></a>
 </div>
-  <br><br><br>
+  <br><br><br><br><br><br>
 <div id="footer">
     <footer class="page-footer" >
           <div class="footer-copyright">
@@ -81,6 +103,14 @@
     .vk{
       color: white !important;
     }
+
+    td{
+      text-align: center;
+    }
+    th{
+      text-align: center;
+    }
+
   </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 </body>
