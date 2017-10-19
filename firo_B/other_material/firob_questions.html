@@ -1,62 +1,6 @@
-<!DOCTYPE html>
-<html>
+Q1. I try to be with people.<br>
 
-<head>
-<title>FIRO B Test</title>
-<style type="text/css">
-  #footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  /* Tablet Landscape */
-  @media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
-  }
-
-  /* Tabled Portrait */
-  @media screen and (max-width: 768px) {
-      #primary { width:100%; }
-      #secondary { width:100%; margin:0; border:none; }
-  }
-  @media (min-device-width:600px) {
-      img[data-src-600px] {
-          content: attr(data-src-600px, url);
-      }
-  }
-
-  @media (min-device-width:800px) {
-      img[data-src-800px] {
-          content: attr(data-src-800px, url);
-      }
-  }
-  html { font-size:100%; }
-  @media (min-width: 640px) { body {font-size:1rem;} } 
-  @media (min-width:960px) { body {font-size:1.2rem;} } 
-  @media (min-width:1100px) { body {font-size:1.5rem;} }
-  @media (min-width:1300px) { body {font-size:1.1rem;} } 
-</style>
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
-</head>
-
-<body>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-<div class="container">
-  <h3 align="center">FIRO B Test</h3>
-
-  <br>
-
-  <p style="text-align:justify" align="center" text-size="1rem">Please select the Answer that Best Applies to you. Please be as honest as you can.</p> <br><br>
-
-  <form action="/cal" method="POST">
-
-    Q1. I try to be with people.<br>
-
-  <input type="radio" name="ques1" value="a" required id="q1a" class="with-gap"><label class="radioLabel" for="q1a"> Usually</label> &nbsp;
+	<input type="radio" name="ques1" value="a" required id="q1a" class="with-gap"><label class="radioLabel" for="q1a"> Usually</label> &nbsp;
     <input type="radio" name="ques1" value="b" required id="q1b" class="with-gap"><label class="radioLabel" for="q1b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques1" value="c" required id="q1c" class="with-gap"><label class="radioLabel" for="q1c"> Rarely</label> &nbsp;
     <input type="radio" name="ques1" value="d" required id="q1d" class="with-gap"><label class="radioLabel" for="q1d"> Often</label> &nbsp;
@@ -66,7 +10,7 @@
 
 Q2. I let other people decide what to do.<br>
 
-  <input type="radio" name="ques2" value="a" required id="q2a" class="with-gap"><label class="radioLabel" for="q2a"> Usually</label> &nbsp;
+	<input type="radio" name="ques2" value="a" required id="q2a" class="with-gap"><label class="radioLabel" for="q2a"> Usually</label> &nbsp;
     <input type="radio" name="ques2" value="b" required id="q2b" class="with-gap"><label class="radioLabel" for="q2b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques2" value="c" required id="q2c" class="with-gap"><label class="radioLabel" for="q2c"> Rarely</label> &nbsp;
     <input type="radio" name="ques2" value="d" required id="q2d" class="with-gap"><label class="radioLabel" for="q2d"> Often</label> &nbsp;
@@ -76,7 +20,7 @@ Q2. I let other people decide what to do.<br>
 
 Q3. I join social groups.<br>
 
-  <input type="radio" name="ques3" value="a" required id="q3a" class="with-gap"><label class="radioLabel" for="q3a"> Usually</label> &nbsp;
+	<input type="radio" name="ques3" value="a" required id="q3a" class="with-gap"><label class="radioLabel" for="q3a"> Usually</label> &nbsp;
     <input type="radio" name="ques3" value="b" required id="q3b" class="with-gap"><label class="radioLabel" for="q3b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques3" value="c" required id="q3c" class="with-gap"><label class="radioLabel" for="q3c"> Rarely</label> &nbsp;
     <input type="radio" name="ques3" value="d" required id="q3d" class="with-gap"><label class="radioLabel" for="q3d"> Often</label> &nbsp;
@@ -86,7 +30,7 @@ Q3. I join social groups.<br>
 
 Q4. I try to have close relationships with people.<br>
 
-  <input type="radio" name="ques4" value="a" required id="q4a" class="with-gap"><label class="radioLabel" for="q4a"> Usually</label> &nbsp;
+	<input type="radio" name="ques4" value="a" required id="q4a" class="with-gap"><label class="radioLabel" for="q4a"> Usually</label> &nbsp;
     <input type="radio" name="ques4" value="b" required id="q4b" class="with-gap"><label class="radioLabel" for="q4b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques4" value="c" required id="q4c" class="with-gap"><label class="radioLabel" for="q4c"> Rarely</label> &nbsp;
     <input type="radio" name="ques4" value="d" required id="q4d" class="with-gap"><label class="radioLabel" for="q4d"> Often</label> &nbsp;
@@ -96,7 +40,7 @@ Q4. I try to have close relationships with people.<br>
 
 Q5. I tend to join social organizations when I have an opportunity.<br>
 
-  <input type="radio" name="ques5" value="a" required id="q5a" class="with-gap"><label class="radioLabel" for="q5a"> Usually</label> &nbsp;
+	<input type="radio" name="ques5" value="a" required id="q5a" class="with-gap"><label class="radioLabel" for="q5a"> Usually</label> &nbsp;
     <input type="radio" name="ques5" value="b" required id="q5b" class="with-gap"><label class="radioLabel" for="q5b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques5" value="c" required id="q5c" class="with-gap"><label class="radioLabel" for="q5c"> Rarely</label> &nbsp;
     <input type="radio" name="ques5" value="d" required id="q5d" class="with-gap"><label class="radioLabel" for="q5d"> Often</label> &nbsp;
@@ -106,7 +50,7 @@ Q5. I tend to join social organizations when I have an opportunity.<br>
 
 Q6. I let other people strongly influence my actions.<br>
 
-  <input type="radio" name="ques6" value="a" required id="q6a" class="with-gap"><label class="radioLabel" for="q6a"> Usually</label> &nbsp;
+	<input type="radio" name="ques6" value="a" required id="q6a" class="with-gap"><label class="radioLabel" for="q6a"> Usually</label> &nbsp;
     <input type="radio" name="ques6" value="b" required id="q6b" class="with-gap"><label class="radioLabel" for="q6b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques6" value="c" required id="q6c" class="with-gap"><label class="radioLabel" for="q6c"> Rarely</label> &nbsp;
     <input type="radio" name="ques6" value="d" required id="q6d" class="with-gap"><label class="radioLabel" for="q6d"> Often</label> &nbsp;
@@ -116,7 +60,7 @@ Q6. I let other people strongly influence my actions.<br>
 
 Q7. I try to be included in informal social activities.<br>
 
-  <input type="radio" name="ques7" value="a" required id="q7a" class="with-gap"><label class="radioLabel" for="q7a"> Usually</label> &nbsp;
+	<input type="radio" name="ques7" value="a" required id="q7a" class="with-gap"><label class="radioLabel" for="q7a"> Usually</label> &nbsp;
     <input type="radio" name="ques7" value="b" required id="q7b" class="with-gap"><label class="radioLabel" for="q7b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques7" value="c" required id="q7c" class="with-gap"><label class="radioLabel" for="q7c"> Rarely</label> &nbsp;
     <input type="radio" name="ques7" value="d" required id="q7d" class="with-gap"><label class="radioLabel" for="q7d"> Often</label> &nbsp;
@@ -126,7 +70,7 @@ Q7. I try to be included in informal social activities.<br>
 
 Q8. I try to have close personal relationships with people.<br>
 
-  <input type="radio" name="ques8" value="a" required id="q8a" class="with-gap"><label class="radioLabel" for="q8a"> Usually</label> &nbsp;
+	<input type="radio" name="ques8" value="a" required id="q8a" class="with-gap"><label class="radioLabel" for="q8a"> Usually</label> &nbsp;
     <input type="radio" name="ques8" value="b" required id="q8b" class="with-gap"><label class="radioLabel" for="q8b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques8" value="c" required id="q8c" class="with-gap"><label class="radioLabel" for="q8c"> Rarely</label> &nbsp;
     <input type="radio" name="ques8" value="d" required id="q8d" class="with-gap"><label class="radioLabel" for="q8d"> Often</label> &nbsp;
@@ -136,7 +80,7 @@ Q8. I try to have close personal relationships with people.<br>
 
 Q9. I try to include other people in my plans.<br>
 
-  <input type="radio" name="ques9" value="a" required id="q9a" class="with-gap"><label class="radioLabel" for="q9a"> Usually</label> &nbsp;
+	<input type="radio" name="ques9" value="a" required id="q9a" class="with-gap"><label class="radioLabel" for="q9a"> Usually</label> &nbsp;
     <input type="radio" name="ques9" value="b" required id="q9b" class="with-gap"><label class="radioLabel" for="q9b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques9" value="c" required id="q9c" class="with-gap"><label class="radioLabel" for="q9c"> Rarely</label> &nbsp;
     <input type="radio" name="ques9" value="d" required id="q9d" class="with-gap"><label class="radioLabel" for="q9d"> Often</label> &nbsp;
@@ -146,7 +90,7 @@ Q9. I try to include other people in my plans.<br>
 
 Q10. I let other people control my actions.<br>
 
-  <input type="radio" name="ques10" value="a" required id="q10a" class="with-gap"><label class="radioLabel" for="q10a"> Usually</label> &nbsp;
+	<input type="radio" name="ques10" value="a" required id="q10a" class="with-gap"><label class="radioLabel" for="q10a"> Usually</label> &nbsp;
     <input type="radio" name="ques10" value="b" required id="q10b" class="with-gap"><label class="radioLabel" for="q10b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques10" value="c" required id="q10c" class="with-gap"><label class="radioLabel" for="q10c"> Rarely</label> &nbsp;
     <input type="radio" name="ques10" value="d" required id="q10d" class="with-gap"><label class="radioLabel" for="q10d"> Often</label> &nbsp;
@@ -156,7 +100,7 @@ Q10. I let other people control my actions.<br>
 
 Q11. I try to have people around me.<br>
 
-  <input type="radio" name="ques11" value="a" required id="q11a" class="with-gap"><label class="radioLabel" for="q11a"> Usually</label> &nbsp;
+	<input type="radio" name="ques11" value="a" required id="q11a" class="with-gap"><label class="radioLabel" for="q11a"> Usually</label> &nbsp;
     <input type="radio" name="ques11" value="b" required id="q11b" class="with-gap"><label class="radioLabel" for="q11b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques11" value="c" required id="q11c" class="with-gap"><label class="radioLabel" for="q11c"> Rarely</label> &nbsp;
     <input type="radio" name="ques11" value="d" required id="q11d" class="with-gap"><label class="radioLabel" for="q11d"> Often</label> &nbsp;
@@ -166,7 +110,7 @@ Q11. I try to have people around me.<br>
 
 Q12. I try to get close and personal with people..<br>
 
-  <input type="radio" name="ques12" value="a" required id="q12a" class="with-gap"><label class="radioLabel" for="q12a"> Usually</label> &nbsp;
+	<input type="radio" name="ques12" value="a" required id="q12a" class="with-gap"><label class="radioLabel" for="q12a"> Usually</label> &nbsp;
     <input type="radio" name="ques12" value="b" required id="q12b" class="with-gap"><label class="radioLabel" for="q12b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques12" value="c" required id="q12c" class="with-gap"><label class="radioLabel" for="q12c"> Rarely</label> &nbsp;
     <input type="radio" name="ques12" value="d" required id="q12d" class="with-gap"><label class="radioLabel" for="q12d"> Often</label> &nbsp;
@@ -176,7 +120,7 @@ Q12. I try to get close and personal with people..<br>
 
 Q13. When people are doing things together, I tend to join them.<br>
 
-  <input type="radio" name="ques13" value="a" required id="q13a" class="with-gap"><label class="radioLabel" for="q13a"> Usually</label> &nbsp;
+	<input type="radio" name="ques13" value="a" required id="q13a" class="with-gap"><label class="radioLabel" for="q13a"> Usually</label> &nbsp;
     <input type="radio" name="ques13" value="b" required id="q13b" class="with-gap"><label class="radioLabel" for="q13b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques13" value="c" required id="q13c" class="with-gap"><label class="radioLabel" for="q13c"> Rarely</label> &nbsp;
     <input type="radio" name="ques13" value="d" required id="q13d" class="with-gap"><label class="radioLabel" for="q13d"> Often</label> &nbsp;
@@ -186,7 +130,7 @@ Q13. When people are doing things together, I tend to join them.<br>
 
 Q14. I am easily led by people.<br>
 
-  <input type="radio" name="ques14" value="a" required id="q14a" class="with-gap"><label class="radioLabel" for="q14a"> Usually</label> &nbsp;
+	<input type="radio" name="ques14" value="a" required id="q14a" class="with-gap"><label class="radioLabel" for="q14a"> Usually</label> &nbsp;
     <input type="radio" name="ques14" value="b" required id="q14b" class="with-gap"><label class="radioLabel" for="q14b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques14" value="c" required id="q14c" class="with-gap"><label class="radioLabel" for="q14c"> Rarely</label> &nbsp;
     <input type="radio" name="ques14" value="d" required id="q14d" class="with-gap"><label class="radioLabel" for="q14d"> Often</label> &nbsp;
@@ -196,7 +140,7 @@ Q14. I am easily led by people.<br>
 
 Q15. I try to avoid being alone.<br>
 
-  <input type="radio" name="ques15" value="a" required id="q15a" class="with-gap"><label class="radioLabel" for="q15a"> Usually</label> &nbsp;
+	<input type="radio" name="ques15" value="a" required id="q15a" class="with-gap"><label class="radioLabel" for="q15a"> Usually</label> &nbsp;
     <input type="radio" name="ques15" value="b" required id="q15b" class="with-gap"><label class="radioLabel" for="q15b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques15" value="c" required id="q15c" class="with-gap"><label class="radioLabel" for="q15c"> Rarely</label> &nbsp;
     <input type="radio" name="ques15" value="d" required id="q15d" class="with-gap"><label class="radioLabel" for="q15d"> Often</label> &nbsp;
@@ -206,7 +150,7 @@ Q15. I try to avoid being alone.<br>
 
 Q16. I try to participate in group activities.  <br>
 
-  <input type="radio" name="ques16" value="a" required id="q16a" class="with-gap"><label class="radioLabel" for="q16a"> Usually</label> &nbsp;
+	<input type="radio" name="ques16" value="a" required id="q16a" class="with-gap"><label class="radioLabel" for="q16a"> Usually</label> &nbsp;
     <input type="radio" name="ques16" value="b" required id="q16b" class="with-gap"><label class="radioLabel" for="q16b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques16" value="c" required id="q16c" class="with-gap"><label class="radioLabel" for="q16c"> Rarely</label> &nbsp;
     <input type="radio" name="ques16" value="d" required id="q16d" class="with-gap"><label class="radioLabel" for="q16d"> Often</label> &nbsp;
@@ -216,7 +160,7 @@ Q16. I try to participate in group activities.  <br>
 
 Q17. I try to be friendly to people.<br>
 
-  <input type="radio" name="ques17" value="a" required id="q17a" class="with-gap"><label class="radioLabel" for="q17a"> Most people</label> &nbsp;
+	<input type="radio" name="ques17" value="a" required id="q17a" class="with-gap"><label class="radioLabel" for="q17a"> Most people</label> &nbsp;
     <input type="radio" name="ques17" value="b" required id="q17b" class="with-gap"><label class="radioLabel" for="q17b"> Many people</label> &nbsp;
     <input type="radio" name="ques17" value="c" required id="q17c" class="with-gap"><label class="radioLabel" for="q17c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques17" value="d" required id="q17d" class="with-gap"><label class="radioLabel" for="q17d"> A few people</label> &nbsp;
@@ -226,7 +170,7 @@ Q17. I try to be friendly to people.<br>
 
 Q18. I let other people decide what I do.<br>
 
-  <input type="radio" name="ques18" value="a" required id="q18a" class="with-gap"><label class="radioLabel" for="q18a"> Most people</label> &nbsp;
+	<input type="radio" name="ques18" value="a" required id="q18a" class="with-gap"><label class="radioLabel" for="q18a"> Most people</label> &nbsp;
     <input type="radio" name="ques18" value="b" required id="q18b" class="with-gap"><label class="radioLabel" for="q18b"> Many people</label> &nbsp;
     <input type="radio" name="ques18" value="c" required id="q18c" class="with-gap"><label class="radioLabel" for="q18c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques18" value="d" required id="q18d" class="with-gap"><label class="radioLabel" for="q18d"> A few people</label> &nbsp;
@@ -236,7 +180,7 @@ Q18. I let other people decide what I do.<br>
 
 Q19. My personal relationships with people are cold and distant..<br>
 
-  <input type="radio" name="ques19" value="a" required id="q19a" class="with-gap"><label class="radioLabel" for="q19a"> Most people</label> &nbsp;
+	<input type="radio" name="ques19" value="a" required id="q19a" class="with-gap"><label class="radioLabel" for="q19a"> Most people</label> &nbsp;
     <input type="radio" name="ques19" value="b" required id="q19b" class="with-gap"><label class="radioLabel" for="q19b"> Many people</label> &nbsp;
     <input type="radio" name="ques19" value="c" required id="q19c" class="with-gap"><label class="radioLabel" for="q19c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques19" value="d" required id="q19d" class="with-gap"><label class="radioLabel" for="q19d"> A few people</label> &nbsp;
@@ -246,7 +190,7 @@ Q19. My personal relationships with people are cold and distant..<br>
 
 Q20. I let other people take charge of things.<br>
 
-  <input type="radio" name="ques20" value="a" required id="q20a" class="with-gap"><label class="radioLabel" for="q20a"> Most people</label> &nbsp;
+	<input type="radio" name="ques20" value="a" required id="q20a" class="with-gap"><label class="radioLabel" for="q20a"> Most people</label> &nbsp;
     <input type="radio" name="ques20" value="b" required id="q20b" class="with-gap"><label class="radioLabel" for="q20b"> Many people</label> &nbsp;
     <input type="radio" name="ques20" value="c" required id="q20c" class="with-gap"><label class="radioLabel" for="q20c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques20" value="d" required id="q20d" class="with-gap"><label class="radioLabel" for="q20d"> A few people</label> &nbsp;
@@ -256,7 +200,7 @@ Q20. I let other people take charge of things.<br>
 
 Q21. I try to have close relationships with people.<br>
 
-  <input type="radio" name="ques21" value="a" required id="q21a" class="with-gap"><label class="radioLabel" for="q21a"> Most people</label> &nbsp;
+	<input type="radio" name="ques21" value="a" required id="q21a" class="with-gap"><label class="radioLabel" for="q21a"> Most people</label> &nbsp;
     <input type="radio" name="ques21" value="b" required id="q21b" class="with-gap"><label class="radioLabel" for="q21b"> Many people</label> &nbsp;
     <input type="radio" name="ques21" value="c" required id="q21c" class="with-gap"><label class="radioLabel" for="q21c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques21" value="d" required id="q21d" class="with-gap"><label class="radioLabel" for="q21d"> A few people</label> &nbsp;
@@ -266,7 +210,7 @@ Q21. I try to have close relationships with people.<br>
 
 Q22. I let other people strongly influence my actions.<br>
 
-  <input type="radio" name="ques22" value="a" required id="q22a" class="with-gap"><label class="radioLabel" for="q22a"> Most people</label> &nbsp;
+	<input type="radio" name="ques22" value="a" required id="q22a" class="with-gap"><label class="radioLabel" for="q22a"> Most people</label> &nbsp;
     <input type="radio" name="ques22" value="b" required id="q22b" class="with-gap"><label class="radioLabel" for="q22b"> Many people</label> &nbsp;
     <input type="radio" name="ques22" value="c" required id="q22c" class="with-gap"><label class="radioLabel" for="q22c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques22" value="d" required id="q22d" class="with-gap"><label class="radioLabel" for="q22d"> A few people</label> &nbsp;
@@ -276,7 +220,7 @@ Q22. I let other people strongly influence my actions.<br>
 
 Q23. I try to get close and personal with people.<br>
 
-  <input type="radio" name="ques23" value="a" required id="q23a" class="with-gap"><label class="radioLabel" for="q23a"> Most people</label> &nbsp;
+	<input type="radio" name="ques23" value="a" required id="q23a" class="with-gap"><label class="radioLabel" for="q23a"> Most people</label> &nbsp;
     <input type="radio" name="ques23" value="b" required id="q23b" class="with-gap"><label class="radioLabel" for="q23b"> Many people</label> &nbsp;
     <input type="radio" name="ques23" value="c" required id="q23c" class="with-gap"><label class="radioLabel" for="q23c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques23" value="d" required id="q23d" class="with-gap"><label class="radioLabel" for="q23d"> A few people</label> &nbsp;
@@ -286,7 +230,7 @@ Q23. I try to get close and personal with people.<br>
 
 Q24. I let other people control my actions.<br>
 
-  <input type="radio" name="ques24" value="a" required id="q24a" class="with-gap"><label class="radioLabel" for="q24a"> Most people</label> &nbsp;
+	<input type="radio" name="ques24" value="a" required id="q24a" class="with-gap"><label class="radioLabel" for="q24a"> Most people</label> &nbsp;
     <input type="radio" name="ques24" value="b" required id="q24b" class="with-gap"><label class="radioLabel" for="q24b"> Many people</label> &nbsp;
     <input type="radio" name="ques24" value="c" required id="q24c" class="with-gap"><label class="radioLabel" for="q24c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques24" value="d" required id="q24d" class="with-gap"><label class="radioLabel" for="q24d"> A few people</label> &nbsp;
@@ -296,7 +240,7 @@ Q24. I let other people control my actions.<br>
 
 Q25. I act cool and distant with people.<br>
 
-  <input type="radio" name="ques25" value="a" required id="q25a" class="with-gap"><label class="radioLabel" for="q25a"> Most people</label> &nbsp;
+	<input type="radio" name="ques25" value="a" required id="q25a" class="with-gap"><label class="radioLabel" for="q25a"> Most people</label> &nbsp;
     <input type="radio" name="ques25" value="b" required id="q25b" class="with-gap"><label class="radioLabel" for="q25b"> Many people</label> &nbsp;
     <input type="radio" name="ques25" value="c" required id="q25c" class="with-gap"><label class="radioLabel" for="q25c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques25" value="d" required id="q25d" class="with-gap"><label class="radioLabel" for="q25d"> A few people</label> &nbsp;
@@ -306,7 +250,7 @@ Q25. I act cool and distant with people.<br>
 
 Q26. I am easily led by people.<br>
 
-  <input type="radio" name="ques26" value="a" required id="q26a" class="with-gap"><label class="radioLabel" for="q26a"> Most people</label> &nbsp;
+	<input type="radio" name="ques26" value="a" required id="q26a" class="with-gap"><label class="radioLabel" for="q26a"> Most people</label> &nbsp;
     <input type="radio" name="ques26" value="b" required id="q26b" class="with-gap"><label class="radioLabel" for="q26b"> Many people</label> &nbsp;
     <input type="radio" name="ques26" value="c" required id="q26c" class="with-gap"><label class="radioLabel" for="q26c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques26" value="d" required id="q26d" class="with-gap"><label class="radioLabel" for="q26d"> A few people</label> &nbsp;
@@ -316,7 +260,7 @@ Q26. I am easily led by people.<br>
 
 Q27. I try to have close, personal relationship with people.<br>
 
-  <input type="radio" name="ques27" value="a" required id="q27a" class="with-gap"><label class="radioLabel" for="q27a"> Most people</label> &nbsp;
+	<input type="radio" name="ques27" value="a" required id="q27a" class="with-gap"><label class="radioLabel" for="q27a"> Most people</label> &nbsp;
     <input type="radio" name="ques27" value="b" required id="q27b" class="with-gap"><label class="radioLabel" for="q27b"> Many people</label> &nbsp;
     <input type="radio" name="ques27" value="c" required id="q27c" class="with-gap"><label class="radioLabel" for="q27c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques27" value="d" required id="q27d" class="with-gap"><label class="radioLabel" for="q27d"> A few people</label> &nbsp;
@@ -326,7 +270,7 @@ Q27. I try to have close, personal relationship with people.<br>
 
 Q28. I like people to invite me to things.<br>
 
-  <input type="radio" name="ques28" value="a" required id="q28a" class="with-gap"><label class="radioLabel" for="q28a"> Most people</label> &nbsp;
+	<input type="radio" name="ques28" value="a" required id="q28a" class="with-gap"><label class="radioLabel" for="q28a"> Most people</label> &nbsp;
     <input type="radio" name="ques28" value="b" required id="q28b" class="with-gap"><label class="radioLabel" for="q28b"> Many people</label> &nbsp;
     <input type="radio" name="ques28" value="c" required id="q28c" class="with-gap"><label class="radioLabel" for="q28c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques28" value="d" required id="q28d" class="with-gap"><label class="radioLabel" for="q28d"> A few people</label> &nbsp;
@@ -336,7 +280,7 @@ Q28. I like people to invite me to things.<br>
 
 Q29. I like people to act close and personal with me.<br>
 
-  <input type="radio" name="ques29" value="a" required id="q29a" class="with-gap"><label class="radioLabel" for="q29a"> Most people</label> &nbsp;
+	<input type="radio" name="ques29" value="a" required id="q29a" class="with-gap"><label class="radioLabel" for="q29a"> Most people</label> &nbsp;
     <input type="radio" name="ques29" value="b" required id="q29b" class="with-gap"><label class="radioLabel" for="q29b"> Many people</label> &nbsp;
     <input type="radio" name="ques29" value="c" required id="q29c" class="with-gap"><label class="radioLabel" for="q29c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques29" value="d" required id="q29d" class="with-gap"><label class="radioLabel" for="q29d"> A few people</label> &nbsp;
@@ -346,7 +290,7 @@ Q29. I like people to act close and personal with me.<br>
 
 Q30. I try to influence strongly the actions of other people..<br>
 
-  <input type="radio" name="ques30" value="a" required id="q30a" class="with-gap"><label class="radioLabel" for="q30a"> Most people</label> &nbsp;
+	<input type="radio" name="ques30" value="a" required id="q30a" class="with-gap"><label class="radioLabel" for="q30a"> Most people</label> &nbsp;
     <input type="radio" name="ques30" value="b" required id="q30b" class="with-gap"><label class="radioLabel" for="q30b"> Many people</label> &nbsp;
     <input type="radio" name="ques30" value="c" required id="q30c" class="with-gap"><label class="radioLabel" for="q30c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques30" value="d" required id="q30d" class="with-gap"><label class="radioLabel" for="q30d"> A few people</label> &nbsp;
@@ -356,7 +300,7 @@ Q30. I try to influence strongly the actions of other people..<br>
 
 Q31. I like people to invite me to join in their activities.<br>
 
-  <input type="radio" name="ques31" value="a" required id="q31a" class="with-gap"><label class="radioLabel" for="q31a"> Most people</label> &nbsp;
+	<input type="radio" name="ques31" value="a" required id="q31a" class="with-gap"><label class="radioLabel" for="q31a"> Most people</label> &nbsp;
     <input type="radio" name="ques31" value="b" required id="q31b" class="with-gap"><label class="radioLabel" for="q31b"> Many people</label> &nbsp;
     <input type="radio" name="ques31" value="c" required id="q31c" class="with-gap"><label class="radioLabel" for="q31c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques31" value="d" required id="q31d" class="with-gap"><label class="radioLabel" for="q31d"> A few people</label> &nbsp;
@@ -366,7 +310,7 @@ Q31. I like people to invite me to join in their activities.<br>
 
 Q32. I like people to act close towards me.<br>
 
-  <input type="radio" name="ques32" value="a" required id="q32a" class="with-gap"><label class="radioLabel" for="q32a"> Most people</label> &nbsp;
+	<input type="radio" name="ques32" value="a" required id="q32a" class="with-gap"><label class="radioLabel" for="q32a"> Most people</label> &nbsp;
     <input type="radio" name="ques32" value="b" required id="q32b" class="with-gap"><label class="radioLabel" for="q32b"> Many people</label> &nbsp;
     <input type="radio" name="ques32" value="c" required id="q32c" class="with-gap"><label class="radioLabel" for="q32c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques32" value="d" required id="q32d" class="with-gap"><label class="radioLabel" for="q32d"> A few people</label> &nbsp;
@@ -376,7 +320,7 @@ Q32. I like people to act close towards me.<br>
 
 Q33. I try to take charge of things when I am with people.<br>
 
-  <input type="radio" name="ques33" value="a" required id="q33a" class="with-gap"><label class="radioLabel" for="q33a"> Most people</label> &nbsp;
+	<input type="radio" name="ques33" value="a" required id="q33a" class="with-gap"><label class="radioLabel" for="q33a"> Most people</label> &nbsp;
     <input type="radio" name="ques33" value="b" required id="q33b" class="with-gap"><label class="radioLabel" for="q33b"> Many people</label> &nbsp;
     <input type="radio" name="ques33" value="c" required id="q33c" class="with-gap"><label class="radioLabel" for="q33c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques33" value="d" required id="q33d" class="with-gap"><label class="radioLabel" for="q33d"> A few people</label> &nbsp;
@@ -386,7 +330,7 @@ Q33. I try to take charge of things when I am with people.<br>
 
 Q34. I like people to include me in their activities.<br>
 
-  <input type="radio" name="ques34" value="a" required id="q34a" class="with-gap"><label class="radioLabel" for="q34a"> Most people</label> &nbsp;
+	<input type="radio" name="ques34" value="a" required id="q34a" class="with-gap"><label class="radioLabel" for="q34a"> Most people</label> &nbsp;
     <input type="radio" name="ques34" value="b" required id="q34b" class="with-gap"><label class="radioLabel" for="q34b"> Many people</label> &nbsp;
     <input type="radio" name="ques34" value="c" required id="q34c" class="with-gap"><label class="radioLabel" for="q34c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques34" value="d" required id="q34d" class="with-gap"><label class="radioLabel" for="q34d"> A few people</label> &nbsp;
@@ -396,7 +340,7 @@ Q34. I like people to include me in their activities.<br>
 
 Q35. I like people to act cool and distant towards me.<br>
 
-  <input type="radio" name="ques35" value="a" required id="q35a" class="with-gap"><label class="radioLabel" for="q35a"> Most people</label> &nbsp;
+	<input type="radio" name="ques35" value="a" required id="q35a" class="with-gap"><label class="radioLabel" for="q35a"> Most people</label> &nbsp;
     <input type="radio" name="ques35" value="b" required id="q35b" class="with-gap"><label class="radioLabel" for="q35b"> Many people</label> &nbsp;
     <input type="radio" name="ques35" value="c" required id="q35c" class="with-gap"><label class="radioLabel" for="q35c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques35" value="d" required id="q35d" class="with-gap"><label class="radioLabel" for="q35d"> A few people</label> &nbsp;
@@ -406,7 +350,7 @@ Q35. I like people to act cool and distant towards me.<br>
 
 Q36. I try to have other people do things the way I want them done.<br>
 
-  <input type="radio" name="ques36" value="a" required id="q36a" class="with-gap"><label class="radioLabel" for="q36a"> Most people</label> &nbsp;
+	<input type="radio" name="ques36" value="a" required id="q36a" class="with-gap"><label class="radioLabel" for="q36a"> Most people</label> &nbsp;
     <input type="radio" name="ques36" value="b" required id="q36b" class="with-gap"><label class="radioLabel" for="q36b"> Many people</label> &nbsp;
     <input type="radio" name="ques36" value="c" required id="q36c" class="with-gap"><label class="radioLabel" for="q36c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques36" value="d" required id="q36d" class="with-gap"><label class="radioLabel" for="q36d"> A few people</label> &nbsp;
@@ -416,7 +360,7 @@ Q36. I try to have other people do things the way I want them done.<br>
 
 Q37. I like people to ask me to participate in their discussions.<br>
 
-  <input type="radio" name="ques37" value="a" required id="q37a" class="with-gap"><label class="radioLabel" for="q37a"> Most people</label> &nbsp;
+	<input type="radio" name="ques37" value="a" required id="q37a" class="with-gap"><label class="radioLabel" for="q37a"> Most people</label> &nbsp;
     <input type="radio" name="ques37" value="b" required id="q37b" class="with-gap"><label class="radioLabel" for="q37b"> Many people</label> &nbsp;
     <input type="radio" name="ques37" value="c" required id="q37c" class="with-gap"><label class="radioLabel" for="q37c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques37" value="d" required id="q37d" class="with-gap"><label class="radioLabel" for="q37d"> A few people</label> &nbsp;
@@ -426,7 +370,7 @@ Q37. I like people to ask me to participate in their discussions.<br>
 
 Q38. I like people to act friendly towards me.<br>
 
-  <input type="radio" name="ques38" value="a" required id="q38a" class="with-gap"><label class="radioLabel" for="q38a"> Most people</label> &nbsp;
+	<input type="radio" name="ques38" value="a" required id="q38a" class="with-gap"><label class="radioLabel" for="q38a"> Most people</label> &nbsp;
     <input type="radio" name="ques38" value="b" required id="q38b" class="with-gap"><label class="radioLabel" for="q38b"> Many people</label> &nbsp;
     <input type="radio" name="ques38" value="c" required id="q38c" class="with-gap"><label class="radioLabel" for="q38c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques38" value="d" required id="q38d" class="with-gap"><label class="radioLabel" for="q38d"> A few people</label> &nbsp;
@@ -436,7 +380,7 @@ Q38. I like people to act friendly towards me.<br>
 
 Q39. I like people to invite me to participate in their activities.<br>
 
-  <input type="radio" name="ques39" value="a" required id="q39a" class="with-gap"><label class="radioLabel" for="q39a"> Most people</label> &nbsp;
+	<input type="radio" name="ques39" value="a" required id="q39a" class="with-gap"><label class="radioLabel" for="q39a"> Most people</label> &nbsp;
     <input type="radio" name="ques39" value="b" required id="q39b" class="with-gap"><label class="radioLabel" for="q39b"> Many people</label> &nbsp;
     <input type="radio" name="ques39" value="c" required id="q39c" class="with-gap"><label class="radioLabel" for="q39c"> Sometimes</label> &nbsp;
     <input type="radio" name="ques39" value="d" required id="q39d" class="with-gap"><label class="radioLabel" for="q39d"> A few people</label> &nbsp;
@@ -446,7 +390,7 @@ Q39. I like people to invite me to participate in their activities.<br>
 
 Q40. I like people to act distant towards me.<br>
 
-  <input type="radio" name="ques40" value="a" required id="q40a" class="with-gap"><label class="radioLabel" for="q40a"> Usually</label> &nbsp;
+	<input type="radio" name="ques40" value="a" required id="q40a" class="with-gap"><label class="radioLabel" for="q40a"> Usually</label> &nbsp;
     <input type="radio" name="ques40" value="b" required id="q40b" class="with-gap"><label class="radioLabel" for="q40b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques40" value="c" required id="q40c" class="with-gap"><label class="radioLabel" for="q40c"> Rarely</label> &nbsp;
     <input type="radio" name="ques40" value="d" required id="q40d" class="with-gap"><label class="radioLabel" for="q40d"> Often</label> &nbsp;
@@ -456,7 +400,7 @@ Q40. I like people to act distant towards me.<br>
 
 Q41. I try to be the dominant person when I am with people.<br>
 
-  <input type="radio" name="ques41" value="a" required id="q41a" class="with-gap"><label class="radioLabel" for="q41a"> Usually</label> &nbsp;
+	<input type="radio" name="ques41" value="a" required id="q41a" class="with-gap"><label class="radioLabel" for="q41a"> Usually</label> &nbsp;
     <input type="radio" name="ques41" value="b" required id="q41b" class="with-gap"><label class="radioLabel" for="q41b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques41" value="c" required id="q41c" class="with-gap"><label class="radioLabel" for="q41c"> Rarely</label> &nbsp;
     <input type="radio" name="ques41" value="d" required id="q41d" class="with-gap"><label class="radioLabel" for="q41d"> Often</label> &nbsp;
@@ -466,7 +410,7 @@ Q41. I try to be the dominant person when I am with people.<br>
 
 Q42. I like people to invite me to things <br>
 
-  <input type="radio" name="ques42" value="a" required id="q42a" class="with-gap"><label class="radioLabel" for="q42a"> Usually</label> &nbsp;
+	<input type="radio" name="ques42" value="a" required id="q42a" class="with-gap"><label class="radioLabel" for="q42a"> Usually</label> &nbsp;
     <input type="radio" name="ques42" value="b" required id="q42b" class="with-gap"><label class="radioLabel" for="q42b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques42" value="c" required id="q42c" class="with-gap"><label class="radioLabel" for="q42c"> Rarely</label> &nbsp;
     <input type="radio" name="ques42" value="d" required id="q42d" class="with-gap"><label class="radioLabel" for="q42d"> Often</label> &nbsp;
@@ -476,7 +420,7 @@ Q42. I like people to invite me to things <br>
 
 Q43. I like people to act close towards me.<br>
 
-  <input type="radio" name="ques43" value="a" required id="q43a" class="with-gap"><label class="radioLabel" for="q43a"> Usually</label> &nbsp;
+	<input type="radio" name="ques43" value="a" required id="q43a" class="with-gap"><label class="radioLabel" for="q43a"> Usually</label> &nbsp;
     <input type="radio" name="ques43" value="b" required id="q43b" class="with-gap"><label class="radioLabel" for="q43b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques43" value="c" required id="q43c" class="with-gap"><label class="radioLabel" for="q43c"> Rarely</label> &nbsp;
     <input type="radio" name="ques43" value="d" required id="q43d" class="with-gap"><label class="radioLabel" for="q43d"> Often</label> &nbsp;
@@ -486,7 +430,7 @@ Q43. I like people to act close towards me.<br>
 
 Q44. I try to have other people do things I want them done.<br>
 
-  <input type="radio" name="ques44" value="a" required id="q44a" class="with-gap"><label class="radioLabel" for="q44a"> Usually</label> &nbsp;
+	<input type="radio" name="ques44" value="a" required id="q44a" class="with-gap"><label class="radioLabel" for="q44a"> Usually</label> &nbsp;
     <input type="radio" name="ques44" value="b" required id="q44b" class="with-gap"><label class="radioLabel" for="q44b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques44" value="c" required id="q44c" class="with-gap"><label class="radioLabel" for="q44c"> Rarely</label> &nbsp;
     <input type="radio" name="ques44" value="d" required id="q44d" class="with-gap"><label class="radioLabel" for="q44d"> Often</label> &nbsp;
@@ -496,7 +440,7 @@ Q44. I try to have other people do things I want them done.<br>
 
 Q45. I like people to invite me to join in their activities.<br>
 
-  <input type="radio" name="ques45" value="a" required id="q45a" class="with-gap"><label class="radioLabel" for="q45a"> Usually</label> &nbsp;
+	<input type="radio" name="ques45" value="a" required id="q45a" class="with-gap"><label class="radioLabel" for="q45a"> Usually</label> &nbsp;
     <input type="radio" name="ques45" value="b" required id="q45b" class="with-gap"><label class="radioLabel" for="q45b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques45" value="c" required id="q45c" class="with-gap"><label class="radioLabel" for="q45c"> Rarely</label> &nbsp;
     <input type="radio" name="ques45" value="d" required id="q45d" class="with-gap"><label class="radioLabel" for="q45d"> Often</label> &nbsp;
@@ -506,7 +450,7 @@ Q45. I like people to invite me to join in their activities.<br>
 
 Q46. I like people to act cool and distant towards me.<br>
 
-  <input type="radio" name="ques46" value="a" required id="q46a" class="with-gap"><label class="radioLabel" for="q46a"> Usually</label> &nbsp;
+	<input type="radio" name="ques46" value="a" required id="q46a" class="with-gap"><label class="radioLabel" for="q46a"> Usually</label> &nbsp;
     <input type="radio" name="ques46" value="b" required id="q46b" class="with-gap"><label class="radioLabel" for="q46b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques46" value="c" required id="q46c" class="with-gap"><label class="radioLabel" for="q46c"> Rarely</label> &nbsp;
     <input type="radio" name="ques46" value="d" required id="q46d" class="with-gap"><label class="radioLabel" for="q46d"> Often</label> &nbsp;
@@ -516,7 +460,7 @@ Q46. I like people to act cool and distant towards me.<br>
 
 Q47. I try to influence strongly other people’s action.<br>
 
-  <input type="radio" name="ques47" value="a" required id="q47a" class="with-gap"><label class="radioLabel" for="q47a"> Usually</label> &nbsp;
+	<input type="radio" name="ques47" value="a" required id="q47a" class="with-gap"><label class="radioLabel" for="q47a"> Usually</label> &nbsp;
     <input type="radio" name="ques47" value="b" required id="q47b" class="with-gap"><label class="radioLabel" for="q47b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques47" value="c" required id="q47c" class="with-gap"><label class="radioLabel" for="q47c"> Rarely</label> &nbsp;
     <input type="radio" name="ques47" value="d" required id="q47d" class="with-gap"><label class="radioLabel" for="q47d"> Often</label> &nbsp;
@@ -526,7 +470,7 @@ Q47. I try to influence strongly other people’s action.<br>
 
 Q48. I try to influence strongly other people’s action.<br>
 
-  <input type="radio" name="ques48" value="a" required id="q48a" class="with-gap"><label class="radioLabel" for="q48a"> Usually</label> &nbsp;
+	<input type="radio" name="ques48" value="a" required id="q48a" class="with-gap"><label class="radioLabel" for="q48a"> Usually</label> &nbsp;
     <input type="radio" name="ques48" value="b" required id="q48b" class="with-gap"><label class="radioLabel" for="q48b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques48" value="c" required id="q48c" class="with-gap"><label class="radioLabel" for="q48c"> Rarely</label> &nbsp;
     <input type="radio" name="ques48" value="d" required id="q48d" class="with-gap"><label class="radioLabel" for="q48d"> Often</label> &nbsp;
@@ -536,7 +480,7 @@ Q48. I try to influence strongly other people’s action.<br>
 
 Q49. I like people to act close and personal with me.<br>
 
-  <input type="radio" name="ques49" value="a" required id="q49a" class="with-gap"><label class="radioLabel" for="q49a"> Usually</label> &nbsp;
+	<input type="radio" name="ques49" value="a" required id="q49a" class="with-gap"><label class="radioLabel" for="q49a"> Usually</label> &nbsp;
     <input type="radio" name="ques49" value="b" required id="q49b" class="with-gap"><label class="radioLabel" for="q49b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques49" value="c" required id="q49c" class="with-gap"><label class="radioLabel" for="q49c"> Rarely</label> &nbsp;
     <input type="radio" name="ques49" value="d" required id="q49d" class="with-gap"><label class="radioLabel" for="q49d"> Often</label> &nbsp;
@@ -546,7 +490,7 @@ Q49. I like people to act close and personal with me.<br>
 
 Q50. I try to take charge of things when I am with people.<br>
 
-  <input type="radio" name="ques50" value="a" required id="q50a" class="with-gap"><label class="radioLabel" for="q50a"> Usually</label> &nbsp;
+	<input type="radio" name="ques50" value="a" required id="q50a" class="with-gap"><label class="radioLabel" for="q50a"> Usually</label> &nbsp;
     <input type="radio" name="ques50" value="b" required id="q50b" class="with-gap"><label class="radioLabel" for="q50b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques50" value="c" required id="q50c" class="with-gap"><label class="radioLabel" for="q50c"> Rarely</label> &nbsp;
     <input type="radio" name="ques50" value="d" required id="q50d" class="with-gap"><label class="radioLabel" for="q50d"> Often</label> &nbsp;
@@ -556,7 +500,7 @@ Q50. I try to take charge of things when I am with people.<br>
 
 Q51. I like people to invite me to participate in their activities.<br>
 
-  <input type="radio" name="ques51" value="a" required id="q51a" class="with-gap"><label class="radioLabel" for="q51a"> Usually</label> &nbsp;
+	<input type="radio" name="ques51" value="a" required id="q51a" class="with-gap"><label class="radioLabel" for="q51a"> Usually</label> &nbsp;
     <input type="radio" name="ques51" value="b" required id="q51b" class="with-gap"><label class="radioLabel" for="q51b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques51" value="c" required id="q51c" class="with-gap"><label class="radioLabel" for="q51c"> Rarely</label> &nbsp;
     <input type="radio" name="ques51" value="d" required id="q51d" class="with-gap"><label class="radioLabel" for="q51d"> Often</label> &nbsp;
@@ -566,7 +510,7 @@ Q51. I like people to invite me to participate in their activities.<br>
 
 Q52. I like people to act distant towards me.<br>
 
-  <input type="radio" name="ques52" value="a" required id="q52a" class="with-gap"><label class="radioLabel" for="q52a"> Usually</label> &nbsp;
+	<input type="radio" name="ques52" value="a" required id="q52a" class="with-gap"><label class="radioLabel" for="q52a"> Usually</label> &nbsp;
     <input type="radio" name="ques52" value="b" required id="q52b" class="with-gap"><label class="radioLabel" for="q52b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques52" value="c" required id="q52c" class="with-gap"><label class="radioLabel" for="q52c"> Rarely</label> &nbsp;
     <input type="radio" name="ques52" value="d" required id="q52d" class="with-gap"><label class="radioLabel" for="q52d"> Often</label> &nbsp;
@@ -576,7 +520,7 @@ Q52. I like people to act distant towards me.<br>
 
 Q53. I try to have other people do things the way I want them done.<br>
 
-  <input type="radio" name="ques53" value="a" required id="q53a" class="with-gap"><label class="radioLabel" for="q53a"> Usually</label> &nbsp;
+	<input type="radio" name="ques53" value="a" required id="q53a" class="with-gap"><label class="radioLabel" for="q53a"> Usually</label> &nbsp;
     <input type="radio" name="ques53" value="b" required id="q53b" class="with-gap"><label class="radioLabel" for="q53b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques53" value="c" required id="q53c" class="with-gap"><label class="radioLabel" for="q53c"> Rarely</label> &nbsp;
     <input type="radio" name="ques53" value="d" required id="q53d" class="with-gap"><label class="radioLabel" for="q53d"> Often</label> &nbsp;
@@ -586,32 +530,10 @@ Q53. I try to have other people do things the way I want them done.<br>
 
 Q54. I take charge of things when I am with people.<br>
 
-  <input type="radio" name="ques54" value="a" required id="q54a" class="with-gap"><label class="radioLabel" for="q54a"> Usually</label> &nbsp;
+	<input type="radio" name="ques54" value="a" required id="q54a" class="with-gap"><label class="radioLabel" for="q54a"> Usually</label> &nbsp;
     <input type="radio" name="ques54" value="b" required id="q54b" class="with-gap"><label class="radioLabel" for="q54b"> Sometimes</label> &nbsp;
     <input type="radio" name="ques54" value="c" required id="q54c" class="with-gap"><label class="radioLabel" for="q54c"> Rarely</label> &nbsp;
     <input type="radio" name="ques54" value="d" required id="q54d" class="with-gap"><label class="radioLabel" for="q54d"> Often</label> &nbsp;
     <input type="radio" name="ques54" value="e" required id="q54e" class="with-gap"><label class="radioLabel" for="q54e"> Occasionally</label> &nbsp;
     <input type="radio" name="ques54" value="f" required id="q54f" class="with-gap"><label class="radioLabel" for="q54f"> Never</label> &nbsp;<br><br>
 
-
-
-
-
-    <button class="btn waves-effect waves-light" type="submit" name="submit">Submit</button>
-    
-  </form>
-</div>
-  <br><br><br><br><br>
-  <style type="text/css">
-    [type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
-    font-size: 1.08rem !important;
-}
-
-.radioLabel{
-  color: #31849b !important;
-}
-
-  </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-</body>
-</html>

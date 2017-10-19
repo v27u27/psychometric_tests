@@ -22,38 +22,43 @@ get '/' do
 end
 
 get '/result' do
-		data = Hash.new
 
-		data[:col1_a] = col1_a
-		data[:col1_b] = col1_b
-
-		data[:col2_a] = col2_a
-		data[:col2_b] = col2_b
-
-		data[:col3_a] = col3_a
-		data[:col3_b] = col3_b
-
-		data[:col4_a] = col4_a
-		data[:col4_b] = col4_b
-
-		data[:my_result] = my_result
-
-		col1_a = 0
-		col1_b = 0
-
-		col2_a = 0
-		col2_b = 0
-
-		col3_a = 0
-		col3_b = 0
-
-		col4_a = 0
-		col4_b = 0
-
-		my_result = ""
-
-		erb :result, locals: data
+	if my_result == ""
+		return redirect '/'
 	end
+
+	data = Hash.new
+
+	data[:col1_a] = col1_a
+	data[:col1_b] = col1_b
+
+	data[:col2_a] = col2_a
+	data[:col2_b] = col2_b
+
+	data[:col3_a] = col3_a
+	data[:col3_b] = col3_b
+
+	data[:col4_a] = col4_a
+	data[:col4_b] = col4_b
+
+	data[:my_result] = my_result
+
+	col1_a = 0
+	col1_b = 0
+
+	col2_a = 0
+	col2_b = 0
+
+	col3_a = 0
+	col3_b = 0
+
+	col4_a = 0
+	col4_b = 0
+
+	my_result = ""
+
+	erb :result, locals: data
+end
 
 post '/cal' do
 
