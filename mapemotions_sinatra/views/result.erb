@@ -5,7 +5,6 @@
 <title>Map your Emotions Result</title>
 <style type="text/css">
   #footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
   }
@@ -46,7 +45,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
-<div class="container" align="center">
+<div class="container" align="center" style="margin-top: 20px;">
 
    <table class="responsive-table">
         <thead>
@@ -82,10 +81,107 @@
       <br><br>
 
 
-  <br>
+
+
+<p class="flow-text">EGOGRAM</p>
+
+
+<!-- Styles -->
+<style>
+body { background-color: #3f3e3b; color: #fff; }
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}                     
+</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/chalk.js"></script>
+
+<!-- Chart code -->
+<script>
+var chartData = [ {
+  "country": "I",
+  "visits": <%= col1 %>,
+  "color": "#FF0F00"
+}, {
+  "country": "II",
+  "visits": <%= col2 %>,
+  "color": "#FF6600"
+}, {
+  "country": "III",
+  "visits": <%= col3 %>,
+  "color": "#FF9E01"
+}, {
+  "country": "IV",
+  "visits": <%= col4 %>,
+  "color": "#FCD202"
+}, {
+  "country": "V",
+  "visits": <%= col5 %>,
+  "color": "#F8FF01"
+}, {
+  "country": "VI",
+  "visits": <%= col6 %>,
+  "color": "#B0DE09"
+} ];
+
+
+var chart = AmCharts.makeChart( "chartdiv", {
+  "theme": "chalk",
+  "type": "serial",
+  "dataProvider": chartData,
+  "categoryField": "country",
+  "depth3D": 20,
+  "angle": 30,
+
+  "categoryAxis": {
+    "labelRotation": 90,
+    "gridPosition": "start"
+  },
+
+  "valueAxes": [ {
+    "title": "Score"
+  } ],
+
+  "graphs": [ {
+    "valueField": "visits",
+    "colorField": "color",
+    "type": "column",
+    "lineAlpha": 0.1,
+    "fillAlphas": 1
+  } ],
+
+  "chartCursor": {
+    "cursorAlpha": 0,
+    "zoomable": false,
+    "categoryBalloonEnabled": false
+  },
+
+  "export": {
+    "enabled": true
+  }
+} );
+
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div> 
+
+
+
+
+
+
+
+  <br><br><br><br>
   <a href="/"><h5>Take Test Again</h5></a>
 </div>
-  <br><br><br><br><br><br>
+  <br><br>
 <div id="footer">
     <footer class="page-footer" >
           <div class="footer-copyright">

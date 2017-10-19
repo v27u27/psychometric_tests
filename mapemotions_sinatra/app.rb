@@ -39,6 +39,13 @@ get '/result' do
 	data[:ces_score] = ces_score
 	data[:ces_percent] = ces_percent
 
+	data[:col1] = col1
+	data[:col2] = col2
+	data[:col3] = col3
+	data[:col4] = col4
+	data[:col5] = col5
+	data[:col6] = col6
+
 	col1 = 0
 	col2 = 0
 	col3 = 0
@@ -145,9 +152,9 @@ post '/cal' do
 	aes_score = col3
 	ces_score = (col4+col5+col6)/3
 
-	pes_percent = (pes_score * 4.16	).to_f
-	aes_percent = (aes_score * 4.16	).to_f
-	ces_percent = (ces_score * 4.16	).to_f
+	pes_percent = (pes_score * 4.16	).to_f.round(2)
+	aes_percent = (aes_score * 4.16	).to_f.round(2)
+	ces_percent = (ces_score * 4.16	).to_f.round(2)
 
 	flag = 1
 
