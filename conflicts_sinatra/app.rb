@@ -57,9 +57,11 @@ get '/result' do
 	end
 
 	data.each do |key, val|
-		if	(val >= high2num && val < high1num)
-			high2num = val
-			high2 = key
+		if	(val >= high2num && val <= high1num)
+			if key != high1
+				high2num = val
+				high2 = key
+			end
 		end
 	end
 
