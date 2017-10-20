@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>MBTI test result</title>
+<title>FIRO B Result</title>
 <style type="text/css">
   #footer {
     position: fixed;
@@ -46,18 +46,46 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
+
 <div class="container" align="center">
 
-   <div class="row" id="resCard" align="center">
-     <div class="col s12 m6 offset-m3">
-        <div class="card-panel teal">
-          <span horizontal-align="center" class="white-text">
-            <h5>Your Personality Type is</h5><br><br>
-            <h2 text-align="center"> <%= my_result %> </h2>
-          </span>
-        </div>
-      </div>
-  </div>
+  <h3>Your Result</h3>
+
+   <table class="bordered striped centered responsive-table">
+        <thead>
+          <tr>
+              <th> &nbsp; </th>
+              <th>Inclusion(I)</th>
+              <th>Control(C)</th>
+              <th>Affection(A)</th>
+              <th> &nbsp; </th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <th>Expressed(E)</th>
+            <td><%= col1_EI %> <br> <b><%= col1_EI_res %></b></td>
+            <td><%= col6_EC %> <br> <b><%= col6_EC_res %></b></td>
+            <td><%= col3_EA %> <br> <b><%= col3_EA_res %></b></td>
+            <td><b> <%= row1sum %> <br> <%= row1_res %> </b> <br> Activity Level</td>
+          </tr>
+          <tr>
+            <th>Wanted(W)</th>
+            <td><%= col4_WI %> <br> <b><%= col4_WI_res %></b></td>
+            <td><%= col2_WC %> <br> <b><%= col2_WC_res %></b></td>
+            <td><%= col5_WA %> <br> <b><%= col5_WA_res %></b></td>
+            <td><b> <%= row2sum %> <br> <%= row2_res %> </b> <br> Need Level</td>
+          </tr>
+          <tr>
+            <th> &nbsp; </th>
+            <td><b> <%= col1sum %> <br> <%= col1_res %> </b> <br> IoP</td>
+            <td><b> <%= col2sum %> <br> <%= col2_res %> </b> <br> AR</td>
+            <td><b> <%= col3sum %> <br> <%= col3_res %> </b> <br> IoA</td>
+            <td><b> <%= totalsum %> <br> <%= total_res %> </b> <br> SII</td>
+          </tr>
+        </tbody>
+      </table>
 
 
   <br>
