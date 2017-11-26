@@ -16,6 +16,12 @@ pes_percent = 0.0
 aes_percent = 0.0
 ces_percent = 0.0
 
+user_name = ""
+school = ""
+branch = ""
+employee_id = ""
+designation = ""
+
 flag = 0
 
 get '/' do
@@ -46,6 +52,12 @@ get '/result' do
 	data[:col5] = col5
 	data[:col6] = col6
 
+	data[:user_name] = user_name
+	data[:school] = school
+	data[:branch] = branch
+	data[:employee_id] = employee_id
+	data[:designation] = designation
+
 	col1 = 0
 	col2 = 0
 	col3 = 0
@@ -60,6 +72,12 @@ get '/result' do
 	pes_percent = 0.0
 	aes_percent = 0.0
 	ces_percent = 0.0
+
+	user_name = ""
+	school = ""
+	branch = ""
+	employee_id = ""
+	designation = ""
 
 	flag = 0
 
@@ -157,6 +175,12 @@ post '/cal' do
 	ces_percent = (ces_score * 4.16	).to_f.round(2)
 
 	flag = 1
+
+	user_name = params["user_name"]
+	school = params["school"]
+	branch = params["branch"]
+	employee_id = params["employee_id"]
+	designation = params["designation"]
 
 	return redirect '/result'
 

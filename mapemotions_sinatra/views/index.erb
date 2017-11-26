@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Map your Emotions</title>
+<title>Map your Self</title>
 <style type="text/css">
   #footer {
     position: fixed;
@@ -46,11 +46,48 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 <div class="container">
-  <h3 align="center">Map your Emotions</h3>
+  <h3 align="center">Map your Self</h3>
 
-  <p style="text-align:justify" text-size="1rem">Indicate how frequently you do each of the following by putting a tick mark in the proper column opposite to each item. Please feel free to respond as this purely for your consumption. If you will not honest to these items you will get a negative picture of yours. </p>  
+  
 
   <form action="/cal" method="POST">
+
+     <blockquote>
+  Please fill your details before proceeding for test 
+  </blockquote>
+
+    <div class="row">
+        <div class="input-field col s6">
+          <input name="user_name" id="user_name" type="text" class="validate" required>
+          <label class="active" for="user_name">Name</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input name="school" id="school" type="text" class="validate" required>
+          <label class="active" for="school">School</label>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s4">
+          <input name="branch" id="branch" type="text" class="validate" required>
+          <label class="active" for="branch">Branch</label>
+      </div>
+
+      <div class="input-field col s4">
+          <input name="employee_id" id="employee_id" type="text" class="validate" required>
+          <label class="active" for="employee_id">Employee Id</label>
+      </div>
+
+      <div class="input-field col s4">
+          <input name="designation" id="designation" type="text" class="validate" required>
+          <label class="active" for="designation">Designation</label>
+      </div>
+    </div>
+
+    <br>
+
+    <p style="text-align:justify" text-size="1rem">Indicate how frequently you do each of the following by selecting the proper column opposite to each item. Please feel free to respond as this purely for your consumption. If you will not be honest to these items you will get a negative picture of yours. </p>  
     <br><br>
 
     Q1. I give /ask people reasons why work is not done or why work is to be done.<br>

@@ -9,21 +9,27 @@ col5 = 0
 
 flag =0
 
+user_name = ""
+school = ""
+branch = ""
+employee_id = ""
+designation = ""
+
 get '/' do
 	erb :index
 end
 
 def colname(colnum)
 	if colnum == "col1"
-		return "Avoiding TURTLE"
+		return "A"
 	elsif colnum == "col2"
-		return "Forcing SHARK"
+		return "B"
 	elsif colnum == "col3"
-		return "Smoothing TEDDY BEAR"
+		return "C"
 	elsif colnum == "col4"
-		return "Compromising FOX"
+		return "D"
 	elsif colnum == "col5"
-		return "Confronting OWL"
+		return "E"
 	end
 end
 
@@ -86,6 +92,12 @@ get '/result' do
 
 	data[:collapsing1] = colname(collapsing1.to_s)
 	data[:collapsing2] = colname(collapsing2.to_s)
+
+	data[:user_name] = user_name
+	data[:school] = school
+	data[:branch] = branch
+	data[:employee_id] = employee_id
+	data[:designation] = designation
 	
 	flag = 0
 	col1 = 0
@@ -102,6 +114,12 @@ get '/result' do
 	collapsing1 = ""
 	collapsing2 = ""
 	collapsingDiff = 999
+
+	user_name = ""
+	school = ""
+	branch = ""
+	employee_id = ""
+	designation = ""
 
 	erb :result, locals: data
 end
@@ -129,6 +147,12 @@ post '/cal' do
 	end
 
 	flag = 1 
+
+	user_name = params["user_name"]
+	school = params["school"]
+	branch = params["branch"]
+	employee_id = params["employee_id"]
+	designation = params["designation"]
 
 	return redirect '/result'
 end

@@ -5,7 +5,7 @@
 <title>FIRO B Result</title>
 <style type="text/css">
   #footer {
-    position: fixed;
+    
     bottom: 0;
     width: 100%;
   }
@@ -49,7 +49,14 @@
 
 <div class="container" align="center">
 
-  <h3>Your Result</h3>
+  <p align="center">
+  Name : <b><%= user_name %></b> &nbsp; School : <b><%= school %></b> &nbsp;
+</p>
+<p align="center">
+  Branch : <b><%= branch %></b> &nbsp; Employee ID : <b><%= employee_id %></b> &nbsp; Designation : <b><%= designation %></b>
+</p>
+
+  <h4>Your Result</h4>
 
    <table class="bordered striped centered responsive-table">
         <thead>
@@ -91,7 +98,7 @@
   <br>
   <a href="/"><h5>Take Test Again</h5></a>
 </div>
-  <br><br><br>
+  <br>
 <div id="footer">
     <footer class="page-footer" >
           <div class="footer-copyright">
