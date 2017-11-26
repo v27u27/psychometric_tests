@@ -48,14 +48,49 @@
 <div class="container">
   <h3 align="center">MBTI Test</h3>
 
-  <p style="text-align:justify" text-size="1rem">This inventory is designed to allow you to preferred type or natural preferences in dealing with both your inner and outer worlds when you are at work. While the Mysers-Briggs Type Indicator (a registered trademark of Consulting Psychologist Press, Inc.) is a validated instrument that provides your overall psychological type across all of your life’s activities; the exercise, which you will do below, is oriented specifically towards your working life. It is most important that you answer the questions according to the way you really behave in the work situations described. Avoid thinking about the way you wish you had behaved, or think you ought to act, or think your boss would like you to act. Think always, “This is the way I actually behave-this is how I think, or act, or decide, or choose in this situation.” Answer the questions as honestly and as objectively as possible. The closer you come to the truth about how you actually behave, the more useful the information will be to you.</p>  
+<form action="/cal" method="POST" class="cols12">
 
-  <blockquote>
-  For every question mentioned below select the option that most accurately describes how you usually act, think or feel 
+
+      <blockquote>
+  Please fill your details before proceeding for test 
   </blockquote>
 
-  <form action="/cal" method="POST">
-    <br><br>
+    <div class="row">
+        <div class="input-field col s6">
+          <input name="user_name" id="user_name" type="text" class="validate" required>
+          <label class="active" for="user_name">Name</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input name="school" id="school" type="text" class="validate" required>
+          <label class="active" for="school">School</label>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s4">
+          <input name="branch" id="branch" type="text" class="validate" required>
+          <label class="active" for="branch">Branch</label>
+      </div>
+
+      <div class="input-field col s4">
+          <input name="employee_id" id="employee_id" type="text" class="validate" required>
+          <label class="active" for="employee_id">Employee Id</label>
+      </div>
+
+      <div class="input-field col s4">
+          <input name="designation" id="designation" type="text" class="validate" required>
+          <label class="active" for="designation">Designation</label>
+      </div>
+    </div>
+
+    <br>
+
+    <p style="text-align:justify" text-size="1rem">This inventory is designed to allow you to preferred type or natural preferences in dealing with both your inner and outer worlds when you are at work. While the Mysers-Briggs Type Indicator (a registered trademark of Consulting Psychologist Press, Inc.) is a validated instrument that provides your overall psychological type across all of your life’s activities; the exercise, which you will do below, is oriented specifically towards your working life. It is most important that you answer the questions according to the way you really behave in the work situations described. Avoid thinking about the way you wish you had behaved, or think you ought to act, or think your boss would like you to act. Think always, “This is the way I actually behave-this is how I think, or act, or decide, or choose in this situation.” Answer the questions as honestly and as objectively as possible. The closer you come to the truth about how you actually behave, the more useful the information will be to you.</p>  
+
+      <blockquote>
+  For every question mentioned below select the option that most accurately describes how you usually act, think or feel 
+  </blockquote> <br>
 
 
     Q1. MY BEST IDEAS AT WORK COME FROM<br>
@@ -66,13 +101,13 @@
     <input type="radio" name="ques2" value="a" required id="q2a" class="with-gap"><label class="radioLabel" for="q2a"> disciplined about following my prepared agenda</label><br>
     <input type="radio" name="ques2" value="b" required id="q2b" class="with-gap"><label class="radioLabel" for="q2b"> flexible and open to whatever comes up</label><br><br><br>
 
-    Q3. WHEN HANDLING A SUBORDINATE’S DEVELOPMENT, I AMMOST LIKELY TO<br>
+    Q3. WHEN HANDLING A SUBORDINATE’S DEVELOPMENT, I AM MOST LIKELY TO<br>
     <input type="radio" name="ques3" value="a" required id="q3a" class="with-gap"><label class="radioLabel" for="q3a"> discuss a problem I have with his or her behaviour</label><br>
     <input type="radio" name="ques3" value="b" required id="q3b" class="with-gap"><label class="radioLabel" for="q3b"> dislike telling him or her unpleasant things</label><br><br><br>
 
     Q4. I PREFER THE PLACE WHERE I WORK TO BE<br>
     <input type="radio" name="ques4" value="a" required id="q4a" class="with-gap"><label class="radioLabel" for="q4a"> structured with clear rules and regulations</label><br>
-    <input type="radio" name="ques4" value="b" required id="q4b" class="with-gap"><label class="radioLabel" for="q4b"> more open-ended and liassez-faire</label><br><br><br>
+    <input type="radio" name="ques4" value="b" required id="q4b" class="with-gap"><label class="radioLabel" for="q4b"> more open-ended and laissez faire</label><br><br><br>
 
     Q5. I WOULD RATHER HAVE A SUPERIOR WITH WHOM I HAVE<br>
     <input type="radio" name="ques5" value="a" required id="q5a" class="with-gap"><label class="radioLabel" for="q5a"> a  lot of day-by-day interaction</label><br>
@@ -163,7 +198,7 @@
     <input type="radio" name="ques26" value="b" required id="q26b" class="with-gap"><label class="radioLabel" for="q26b"> policy problems to solve</label><br><br><br>
 
     Q27. WHEN FACED WITH A DECISION AT WORK, I USUALLY PREFER TO<br>
-    <input type="radio" name="ques27" value="a" required id="q27a" class="with-gap"><label class="radioLabel" for="q27a"> think things though</label><br>
+    <input type="radio" name="ques27" value="a" required id="q27a" class="with-gap"><label class="radioLabel" for="q27a"> think things through</label><br>
     <input type="radio" name="ques27" value="b" required id="q27b" class="with-gap"><label class="radioLabel" for="q27b"> trust gut feelings</label><br><br><br>
 
     Q28. I PREFER THE WORK I DO EVERYDAY TO<br>
@@ -284,7 +319,7 @@
 
     Q57. WHEN I ASK A COLLEAGUE FOR ADVICE OR HELP, I AM USUALLY<br>
     <input type="radio" name="ques57" value="a" required id="q57a" class="with-gap"><label class="radioLabel" for="q57a"> comfortable</label><br>
-    <input type="radio" name="ques57" value="b" required id="q57b" class="with-gap"><label class="radioLabel" for="q57b"> somewhat ill at else</label><br><br><br>
+    <input type="radio" name="ques57" value="b" required id="q57b" class="with-gap"><label class="radioLabel" for="q57b"> somewhat ill at ease</label><br><br><br>
 
     Q58. IN A MEETING OR WHEN READING A REPORT, I AM MORE LIKELY TO<br>
     <input type="radio" name="ques58" value="a" required id="q58a" class="with-gap"><label class="radioLabel" for="q58a"> remember the facts presented</label><br>
@@ -322,7 +357,7 @@
     <input type="radio" name="ques66" value="a" required id="q66a" class="with-gap"><label class="radioLabel" for="q66a"> practical</label><br>
     <input type="radio" name="ques66" value="b" required id="q66b" class="with-gap"><label class="radioLabel" for="q66b"> imaginative</label><br><br><br>
 
-    Q67. I AM USUALLY MORE INTRESTED IN HOW MY COLLEAGUES<br>
+    Q67. I AM USUALLY MORE INTERESTED IN HOW MY COLLEAGUES<br>
     <input type="radio" name="ques67" value="a" required id="q67a" class="with-gap"><label class="radioLabel" for="q67a"> think about the problems</label><br>
     <input type="radio" name="ques67" value="b" required id="q67b" class="with-gap"><label class="radioLabel" for="q67b"> feel about the problems</label><br><br><br>
 
@@ -338,7 +373,7 @@
     <input type="radio" name="ques70" value="a" required id="q70a" class="with-gap"><label class="radioLabel" for="q70a"> write a step-by-step plan early in the process</label><br>
     <input type="radio" name="ques70" value="b" required id="q70b" class="with-gap"><label class="radioLabel" for="q70b"> wait and see how things develop before planning</label><br><br><br>
 
-    Q71. WHEN I HEAR A PRESENTATION FROM A COLLEGUE, I MAY MORE LIKELY TO BE<br>
+    Q71. WHEN I HEAR A PRESENTATION FROM A COLLEAGUE, I MAY MORE LIKELY TO BE<br>
     <input type="radio" name="ques71" value="a" required id="q71a" class="with-gap"><label class="radioLabel" for="q71a"> openly and intellectually critical</label><br>
     <input type="radio" name="ques71" value="b" required id="q71b" class="with-gap"><label class="radioLabel" for="q71b"> careful in voicing my opinions, especially when I disagree</label><br><br><br>
 
@@ -475,7 +510,7 @@
     <input type="radio" name="ques104" value="b" required id="q104b" class="with-gap"><label class="radioLabel" for="q104b"> open to suggestions</label><br><br><br>
 
     Q105. WHEN STRUCK BY A THOUGHT OR FEELING, I TEND TO<br>
-    <input type="radio" name="ques105" value="a" required id="q105a" class="with-gap"><label class="radioLabel" for="q105a"> blurt in out</label><br>
+    <input type="radio" name="ques105" value="a" required id="q105a" class="with-gap"><label class="radioLabel" for="q105a"> blurt it out</label><br>
     <input type="radio" name="ques105" value="b" required id="q105b" class="with-gap"><label class="radioLabel" for="q105b"> keep it inside</label><br><br><br>
 
     Q106. I LIKE TO THINK IN TERMS OF<br>

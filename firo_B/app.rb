@@ -30,6 +30,12 @@ col3_res = ""
 totalsum = 0
 total_res = ""
 
+user_name = ""
+school = ""
+branch = ""
+employee_id = ""
+designation = ""
+
 bool_arr = Array.new(54)
 
 # U list if for questions who need ORring of option (a) only
@@ -88,6 +94,12 @@ get '/result' do
 	data[:col3_res] = col3_res
 	data[:total_res] = total_res
 
+	data[:user_name] = user_name
+	data[:school] = school
+	data[:branch] = branch
+	data[:employee_id] = employee_id
+	data[:designation] = designation
+
 	col1_EI = 0
 	col2_WC = 0
 	col3_EA = 0
@@ -116,6 +128,12 @@ get '/result' do
 
 	totalsum = 0
 	total_res = ""
+
+	user_name = ""
+	school = ""
+	branch = ""
+	employee_id = ""
+	designation = ""
 
 	bool_arr = Array.new(54)
 
@@ -311,6 +329,12 @@ post '/cal' do
 	end
 
 	flag = 1
+
+	user_name = params["user_name"]
+	school = params["school"]
+	branch = params["branch"]
+	employee_id = params["employee_id"]
+	designation = params["designation"]
 
 	return redirect '/result'
 

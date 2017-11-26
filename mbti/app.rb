@@ -13,6 +13,17 @@ col3_b = 0
 col4_a = 0
 col4_b = 0
 
+first_char = ''
+second_char = ''
+third_char = ''
+fourth_char = ''
+
+user_name = ""
+school = ""
+branch = ""
+employee_id = ""
+designation = ""
+
 my_result = ""
 
 get '/' do
@@ -22,38 +33,65 @@ get '/' do
 end
 
 get '/result' do
-		data = Hash.new
 
-		data[:col1_a] = col1_a
-		data[:col1_b] = col1_b
-
-		data[:col2_a] = col2_a
-		data[:col2_b] = col2_b
-
-		data[:col3_a] = col3_a
-		data[:col3_b] = col3_b
-
-		data[:col4_a] = col4_a
-		data[:col4_b] = col4_b
-
-		data[:my_result] = my_result
-
-		col1_a = 0
-		col1_b = 0
-
-		col2_a = 0
-		col2_b = 0
-
-		col3_a = 0
-		col3_b = 0
-
-		col4_a = 0
-		col4_b = 0
-
-		my_result = ""
-
-		erb :result, locals: data
+	if my_result == ""
+		return redirect '/'
 	end
+
+	data = Hash.new
+
+	data[:col1_a] = col1_a
+	data[:col1_b] = col1_b
+
+	data[:col2_a] = col2_a
+	data[:col2_b] = col2_b
+
+	data[:col3_a] = col3_a
+	data[:col3_b] = col3_b
+
+	data[:col4_a] = col4_a
+	data[:col4_b] = col4_b
+
+	data[:first_char] = first_char
+	data[:second_char] = second_char
+	data[:third_char] = third_char
+	data[:fourth_char] = fourth_char
+
+	data[:user_name] = user_name
+	data[:school] = school
+	data[:branch] = branch
+	data[:employee_id] = employee_id
+	data[:designation] = designation
+
+	data[:my_result] = my_result
+
+	col1_a = 0
+	col1_b = 0
+
+	col2_a = 0
+	col2_b = 0
+
+	col3_a = 0
+	col3_b = 0
+
+	col4_a = 0
+	col4_b = 0
+
+	first_char = ''
+	second_char = ''
+	third_char = ''
+	fourth_char = ''
+
+	user_name = ""
+	school = ""
+	branch = ""
+	employee_id = ""
+	designation = ""
+
+	my_result = ""
+
+	erb :result, locals: data
+end
 
 post '/cal' do
 
@@ -96,27 +134,41 @@ post '/cal' do
 
 	if col1_a > col1_b
 		my_result += "E"
+		first_char = 'E'
 	else
 		my_result += "I"
+		first_char = 'I'
 	end
 
 	if col2_a > col2_b
 		my_result += "S"
+		second_char = 'S'
 	else
 		my_result += "N"
+		second_char = 'N'
 	end
 
 	if col3_a > col3_b
 		my_result += "T"
+		third_char = 'T'
 	else
 		my_result += "F"
+		third_char = 'F'
 	end
 
 	if col4_a > col4_b
 		my_result += "J"
+		fourth_char = 'J'
 	else
 		my_result += "P"
+		fourth_char = 'P'
 	end
+
+	user_name = params["user_name"]
+	school = params["school"]
+	branch = params["branch"]
+	employee_id = params["employee_id"]
+	designation = params["designation"]
 
 	return redirect '/result'
 
